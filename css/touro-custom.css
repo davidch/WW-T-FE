@@ -495,7 +495,7 @@ h4, h5, h6 {
 	}	
 						
 	.img_overlay {
-	    background: url("/buildout/images/sidebar_triangle.png") no-repeat scroll center center transparent;
+	    background: url("../images/sidebar_triangle.png") no-repeat scroll center center transparent;
 	    height: 19px;
 	    left: 20px;
 	    position: relative;
@@ -552,7 +552,7 @@ h4, h5, h6 {
 	}
 
 	.feature_image .img_overlay {
-	    background: url("/buildout/images/sidebar_right_triangle.png") no-repeat scroll center center transparent;
+	    background: url("../images/sidebar_right_triangle.png") no-repeat scroll center center transparent;
 	    height: 39px;
 	    left: auto;
 	    position: absolute;
@@ -618,7 +618,7 @@ footer {
 }
 
 	footer .skyline {
-		background-image: url(/buildout/images/nyc-skyline.png);
+		background-image: url("../images/nyc-skyline.png");
 		background-repeat: no-repeat;
 		background-position: left top;
 		height: 102px;
@@ -634,7 +634,7 @@ footer {
 		}
 		
 	footer .container .row {
-		background-image: url(/buildout/images/touro-logo.png);
+		background-image: url("../images/touro-logo.png");
 		background-repeat: no-repeat;
 		background-position: right center;			
 	}
@@ -653,7 +653,7 @@ footer {
 /* $quick_search */
 
 .quick_search > h4 {
-	background: url(/buildout/images/quick-search-arrow.png) no-repeat right center;
+	background: url("../images/quick-search-arrow.png") no-repeat right center;
     display: block;
     float: left;
     font-family: georgia,serif;
