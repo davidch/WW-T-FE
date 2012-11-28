@@ -1,0 +1,1022 @@
+/* BOOT STRAP OVERWRITE */
+
+body {
+	font-size: 16px;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 960px;
+}
+
+.span12 {
+  width: 960px;
+}
+
+p {
+    line-height: 1.4em;
+    margin: 0 0 1em;
+}
+
+a:hover {
+	color: #991A22;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 .5em;
+  font-family: 'georgia', serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1em;
+  color: #06335a;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  color: #991a22;
+  font-size: 1.25em;
+  margin: 0 0 1em;  
+}
+
+h4, h5, h6 {
+  font-size: 1em;
+  margin: 0 0 1em;
+}
+
+hr {
+	border-top-color:	#C1C0BB;
+	border-right-color:	#C1C0BB;
+	border-bottom-color:	#C1C0BB;
+	border-left-color:	#C1C0BB;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 10px 16px;
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  background-color: #ffffff;
+  border: 1px solid #f1f0ea;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: border linear .2s, box-shadow linear .2s;
+  -moz-transition: border linear .2s, box-shadow linear .2s;
+  -o-transition: border linear .2s, box-shadow linear .2s;
+  transition: border linear .2s, box-shadow linear .2s;
+}
+
+.navbar-inner {
+  min-height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #2B3D54;
+  background-image: -moz-linear-gradient(top, #2B3D54, #1A2B43);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2B3D54), to(#1A2B43));
+  background-image: -webkit-linear-gradient(top, #2B3D54, #1A2B43);
+  background-image: -o-linear-gradient(top,#2B3D54, #1A2B43);
+  background-image: linear-gradient(to bottom, #2B3D54, #1A2B43);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2B3D54', endColorstr='#1A2B43', GradientType=0);
+  border: 1px solid #2B3D54;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+  *zoom: 1;
+}
+
+.navbar .brand {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 1em;
+    font-weight: 200;
+    margin-left: 0px;
+    padding: .5em 1em;
+    text-shadow: none;
+}
+
+.navbar .nav {
+	float: right;
+	margin: 0;
+}
+
+.navbar .nav > li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav > li > a, .navbar .nav > li > a:hover {
+    color: #FFC70E;
+    float: none;
+    font-weight: 600;    
+    margin: 0.5em 0;
+    padding: 0 1em;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.navbar .nav > li.last > a {
+	border-right: none;
+	padding-right: 0;
+}
+
+.navbar .nav .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover,
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+	background-color: transparent;
+    box-shadow: none;
+    color: #FFC70E;
+    text-decoration: underline;
+}
+
+
+/******* Touro specific styles *******/
+
+a.active {
+	color: #991a22;
+}
+
+.clear {
+	clear: both;
+}
+
+.intro {
+    font-size: 1.375em;
+    font-weight: 200;
+    line-height: 1.35em;
+}
+	
+.inner {
+	padding: 0  20px 20px;
+}
+
+.inner_left {
+    padding: 10px 10px 20px 0;
+}
+
+	.inner_left p, .inner_left a {
+	    font-size: 14px;
+	}
+
+h4, h5, h6 {
+	font-family: 'helvetica', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+/******* top_navigation *******/
+
+.navbar, .navbar a {
+    font-size: 14px;
+}
+	
+	.navbar .nav > li > a {
+	    border-right: 2px solid #576777;
+	}    
+
+
+/******* $search *******/
+#search_bar {
+    border-bottom: 1px solid #C2C2BD;
+    margin-top: 35px;
+    overflow: hidden;
+    padding-bottom: 18px;
+}
+
+	#search_bar > a {
+		float: left;
+	}	
+
+	#search {
+		float: right;
+		margin: 4px 0 0;
+	}
+
+		#search .search_field {
+		    border-radius: 8px 8px 8px 8px;
+		    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7) inset;
+		    padding: 8px 12px;
+		}
+		
+/******* $main_navigation *******/
+
+#main_navigation {
+    list-style-type: none;
+    margin: 18px 0 10px;
+    overflow: hidden;
+    padding: 0;
+}
+
+	#main_navigation > li {
+	    float: left;
+	    margin: 0 0 0 60px;
+	}
+	
+	#main_navigation > li:first-child {
+	    margin-left: 0px;
+	}	
+	
+		#main_navigation li a {
+		    font-size: 1.44em;
+		    font-weight: 200;
+		}	
+		
+
+/******* $main_content *******/
+
+#main_content {
+    margin-top: 28px;
+    min-height: 300px;
+}
+
+	.main > h2 {
+		margin-bottom: 30px;
+	}
+
+	.main a {
+	    text-decoration: underline;
+	}
+	
+	.main li {
+		margin: 0 0 1em;
+	}
+	
+
+	.section_header {
+	    color: #06335A;
+	    font-family: 'georgia',serif;
+	    font-size: 2.065em;
+	    font-style: italic;
+	    line-height: 1.4em;
+	    margin-top: 0;
+	}
+
+
+	/*** $section_navigation ***/
+	
+	.section_navigation {
+	    border-right: 1px solid #CCCCCC;
+	    margin: 0 7px 0 0;
+	    padding-right: 27px;
+	}
+	
+		.section_navigation > h2 {
+		    color: #991A22;
+		    line-height: 1em;
+		    margin: 0 0 20px;
+		    text-align: right;
+		}
+		
+		.section_navigation > ul {
+			list-style-type: none;
+			margin: 0;
+			font-family: 'georgia', serif;
+		}
+		
+			.section_navigation li {
+			    font-size: 1.2em;
+			    font-weight: 100;
+			    line-height: 1.2em;
+			    margin: 0 0 0.5em;
+			    padding: 0;
+			    text-align: right;
+			}
+			
+				.section_navigation li.active a {
+				    background-color: #991A22;
+				    color: #FFFFFF;
+				    display: inline-block;
+				    margin: 0;
+				    padding: 5px 15px;
+				}			
+				
+				.section_navigation .subnav {
+				    background-color: #FFFFFF;
+				    border: 1px solid #DFDDD4;
+				    display: none;
+				    font-family: helvetica,sans-serif;
+				    font-size: 12px;
+				    list-style-type: none;
+				    margin: 0 -10px 0 0;
+				    padding: 16px 0 0;
+				}
+				
+				.section_navigation li.active .subnav {
+					display: block;
+				}
+				
+				.section_navigation li.active .subnav a {
+				    background: none repeat scroll 0 0 transparent;
+				    color: #06335A;
+				    display: inline;
+				    font-weight: 600;
+				}						
+
+/* $breadcrumbs */
+
+.breadcrumbs {
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px 0 0px;
+}
+
+	.breadcrumbs ul {
+	    font-size: 1.125em;
+	    list-style-type: none;
+	    margin-left: 0;
+	}
+	
+		.breadcrumbs li {
+		    float: left;
+		    list-style: disc outside none;
+		    margin-left: 35px;
+		    padding-left: 15px;
+		}
+		
+		.breadcrumbs li.active {
+		    font-weight: 600;
+		    list-style: none outside none;
+		    margin-left: 0;
+		    padding-left: 0;
+		}
+		
+			.breadcrumbs li a {
+				text-decoration: underline;
+			}
+			
+/* $schools_list */			
+			
+.schools_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+	.schools_list ul {
+	    list-style-type: none;
+	}
+	
+		.schools_list ul li:before {
+		    content: "- ";
+		    float: left;
+		    margin-left: -14px;
+		}
+	
+			.schools_list a {
+			    color: #333333;
+			    display: block;
+			    font-weight: 200;
+			    margin: 0 0 1em;
+			    text-decoration: none;
+			}
+			
+			.schools_list a:hover {
+				text-decoration: underline;
+			}	
+			
+/* $sidebar_feature */	
+
+.sidebar_feature {
+	background-color: #fff;
+	position: relative;
+}
+
+.sidebar_feature.post-it {
+	margin-top: 20px;
+	background-color: #fdf7d9;
+	color: #333;
+}
+
+.sidebar_feature:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.45);
+    content: "";
+    height: 30px;
+    position: absolute;
+    right: 4px;
+    transform: skew(15deg) rotate(6deg);
+    width: 70%;
+    z-index: -1;
+}
+.sidebar_feature:before {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.45);
+    content: "";
+    height: 30px;
+    left: 4px;
+    position: absolute;
+    transform: skew(-15deg) rotate(-6deg);
+    width: 70%;
+    z-index: -2;
+}
+
+
+.sidebar_feature.no_shadow:after {
+    bottom: 5px;
+    box-shadow: 2px 1px 8px 0 rgba(0, 0, 0, 0.45);
+    height: 50%;
+    position: absolute;
+    right: 4px;
+    transform: skew(11deg) rotate(8deg);
+    width: 50px;
+    z-index: -1;
+}
+
+.sidebar_feature.no_shadow:before {
+    bottom: auto;
+    box-shadow: 2px -1px 8px 0 rgba(0, 0, 0, 0.45);
+    height: 50%;
+    left: auto;
+    right: 4px;
+    top: 6px;
+    transform: skew(-11deg) rotate(-8deg);
+    width: 50px;
+}
+	
+	.sidebar_feature img {
+		display: block;
+	}	
+	
+	.inner h4 span {
+	    color: #333333;
+	    font-weight: 200;
+	    line-height: 1.5em;
+	}	
+						
+	.img_overlay {
+	    background: url("/buildout/images/sidebar_triangle.png") no-repeat scroll center center transparent;
+	    height: 19px;
+	    left: 20px;
+	    position: relative;
+	    top: -19px;
+	    width: 39px;
+	    z-index: 3;
+	}	
+	
+	.sidebar_feature h3 {
+	    color: #333333;
+	    font-family: helvetica,sans-serif;
+	    font-size: 1.1em;
+	    font-style: normal;
+	    font-weight: 200;
+	}
+	
+		.sidebar_feature h3 span {
+		    color: #06335A;
+		    display: inline-block;
+		    font-weight: 600;
+		    padding-top: 5px;
+		}
+		
+		.sidebar_feature.post-it h3 span {
+		    color: #333;
+		    display: inline;
+		}    				
+
+	.sidebar_feature p, .sidebar_feature a {
+	    font-size: 0.85em;
+	}
+	
+	.sidebar_feature a {
+		font-weight: 600;
+	}	
+	
+	.sidebar_feature.post-it a {
+		color: #333;
+	}
+	
+/*  $sidebar_feature - large $image with triangle  */	
+
+.feature_image {
+	background: #fff;
+	position: relative;
+}
+
+	.feature_image > img {
+	    display: block;
+	    float: left;
+	    margin-right: 30px;
+	    position: relative;
+	    z-index: 3;
+	}
+
+	.feature_image .img_overlay {
+	    background: url("/buildout/images/sidebar_right_triangle.png") no-repeat scroll center center transparent;
+	    height: 39px;
+	    left: auto;
+	    position: absolute;
+	    right: 228px;
+	    top: 20px;
+	    width: 19px;
+	}
+
+/* $news_item */
+
+.news_item {
+    border-left: 1px solid #AAAAAA;
+    margin: 10px 0 30px;
+    min-height: 150px;
+    padding: 0 0 0 19px;
+}
+
+.news_item.first {
+	border-left: none;
+	padding: 0 0 0 20px;
+}	
+
+	.news_item h3 {
+	    background-color: #991A22;
+	    color: #FFFFFF;
+	    display: inline-block;
+	    font-family: helvetica,sans-serif;
+	    font-size: 0.75em;
+	    font-style: normal;
+	    line-height: 1em;
+	    margin: 0 0 0.5em;
+	    padding: 6px 8px 4px;
+	}
+	
+	.news_item.blue h3 {
+	    background-color: #06335a;
+	}
+	
+	.news_item .inner {
+	    padding: 0 20px 0 0;
+	}	
+	
+		.news_item p.date {
+			color: #4d4d4d;
+		    font-size: 0.85em;
+		    margin: 0 0 0.5em;
+		}
+		
+		.news_item a {
+		    font-size: 0.875em;
+		    font-weight: 600;
+		    text-decoration: none;
+		}	
+	
+	
+/****** $footer *****/
+
+footer {
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+	footer .skyline {
+		background-image: url(/buildout/images/nyc-skyline.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		height: 102px;
+	}
+	
+	footer .bg-color {
+		background-color: #1a3961;			
+	}
+		
+		footer p {
+		    font-size: 0.9375em;
+		    padding-left: 40px;
+		}
+		
+	footer .container .row {
+		background-image: url(/buildout/images/touro-logo.png);
+		background-repeat: no-repeat;
+		background-position: right center;			
+	}
+	
+
+/* $gateway */
+
+.sans {
+    font-family: helvetica,sans-serif;
+    font-size: 1.15em;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0.25em 0 1em;
+}				
+	
+/* $quick_search */
+
+.quick_search > h4 {
+	background: url(/buildout/images/quick-search-arrow.png) no-repeat right center;
+    display: block;
+    float: left;
+    font-family: georgia,serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 200;
+    height: 38px;
+    line-height: 38px;
+    margin-right: 10px;
+    padding-right: 40px;
+}
+
+#quick_search {
+    float: left;
+    width: 400px;
+}
+
+#quick_search > input {
+    border: medium none;
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    color: #20703B;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px 12px;
+    width: 300px;
+}	
+	
+/* $HOMEPAGE */
+
+/* $search_bar */
+
+.homepage #search_bar {
+	border: none;
+	margin-top: 82px;
+	padding-bottom: 0;
+}
+	
+	.homepage #search {
+	    margin: 36px 0 10px;
+	    padding: 0;
+	}
+	
+		.homepage #search .search_field {
+		    margin: 0;
+		}   
+		
+/* $main_navigation */
+
+.homepage #main_content {
+	margin-top: 20px;	
+}
+
+	.homepage #main_navigation {
+		margin: 0 0 40px;
+		overflow: hidden;
+	}
+		
+		.homepage #main_navigation li a {
+		    border-bottom: 1px solid #06335A;
+		    display: block;
+		    padding: 0 0 8px;
+		}
+		
+		.homepage #main_navigation li a:hover, .homepage #main_navigation li a.active {
+		    border-bottom: 1px solid #991A22;
+		    text-decoration: none;
+		}				
+
+		.homepage .intro {
+			margin-top: 0;
+		}			
+		
+/* accordian area */
+
+#site_sections {
+	position: relative;
+}		
+
+	#site_sections .slider {
+		display: none;
+	}
+
+
+/* You can alter this CSS in order to give Smooth Div Scroll your own look'n'feel */
+/* Invisible left hotspot */
+div.scrollingHotSpotLeft
+{
+/* The hotspots have a minimum width of 100 pixels and if there is room the will grow
+and occupy 15% of the scrollable area (30% combined). Adjust it to your own taste. */
+min-width: 75px;
+width: 15%;
+height: 100%;
+/* There is a big background image and it's used to solve some problems I experienced
+in Internet Explorer 6. */
+background-image: url(../images/big_transparent.gif);
+background-repeat: repeat;
+background-position: center center;
+position: absolute;
+z-index: 20;
+left: 0;
+/* The first url is for Firefox and other browsers, the second is for Internet Explorer */
+cursor: url(../images/cursors/cursor_arrow_left.png), url(../images/cursors/cursor_arrow_left.cur),w-resize;
+}
+/* Visible left hotspot */
+div.scrollingHotSpotLeftVisible
+{
+background-image: url(../images/arrow_left.gif);
+background-color: #fff;
+background-repeat: no-repeat;
+opacity: 0.35; /* Standard CSS3 opacity setting */
+-moz-opacity: 0.35; /* Opacity for really old versions of Mozilla Firefox (0.9 or older) */
+filter: alpha(opacity = 35); /* Opacity for Internet Explorer. */
+zoom: 1; /* Trigger "hasLayout" in Internet Explorer 6 or older versions */
+}
+/* Invisible right hotspot */
+div.scrollingHotSpotRight
+{
+min-width: 75px;
+width: 15%;
+height: 100%;
+background-image: url(../images/big_transparent.gif);
+background-repeat: repeat;
+background-position: center center;
+position: absolute;
+z-index: 30;
+right: 0;
+cursor: url(../images/cursors/cursor_arrow_right.png), url(../images/cursors/cursor_arrow_right.cur),e-resize;
+}
+/* Visible right hotspot */
+div.scrollingHotSpotRightVisible
+{
+background-image: url(../images/arrow_right.gif);
+background-color: #fff;
+background-repeat: no-repeat;
+opacity: 0.35;
+filter: alpha(opacity = 35);
+-moz-opacity: 0.35;
+zoom: 1;
+}
+/* The scroll wrapper is always the same width and height as the containing element (div).
+Overflow is hidden because you don't want to show all of the scrollable area.
+*/
+div.scrollWrapper
+{
+position: relative;
+overflow: hidden;
+width: 100%;
+height: 100%;
+z-index:10;
+}
+div.scrollableArea
+{
+position: relative;
+width: auto;
+height: 100%;
+z-index:11;
+}
+
+
+#makeMeScrollable
+{
+	background-color: #fff;
+	width:100%;
+	height: 160px;
+	position: relative;
+	overflow:hidden;
+}
+
+.inside_landing #makeMeScrollable {
+	height: 315px;
+}
+
+.homepage #makeMeScrollable {
+	height: 460px;
+}
+
+#makeMeScrollable img
+{
+	display: block;
+	position: relative;
+	margin: 10px 0 0 0;
+	padding: 0;
+	/* If you don't want the images in the scroller to be selectable, try the following
+	   block of code. It's just a nice feature that prevent the images from
+	   accidentally becoming selected/inverted when the user interacts with the scroller. */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* $scroll_custom */
+
+.scrollableArea > div {
+	color: #fff;
+    float: left;
+    font-family: 'georgia', serif;
+    height: 460px;
+    margin: 0 10px 0 0;
+}
+
+.show3, .show2 {
+    width: 190px;
+}
+	[class*="small-text-"] {
+		background-color: #3a7fb1;
+		height: 140px;
+		margin: 10px 0 0 0;
+		position: relative;
+		width: 190px;
+		
+		-webkit-transition-property:color, background; 
+		-webkit-transition-duration: .25s, .25s; 
+		-webkit-transition-timing-function: linear, ease-in;
+		
+		-moz-transition-property:color, background; 
+		-moz-transition-duration: .25s, .25s; 
+		-moz-transition-timing-function: linear, ease-in;
+		
+	}
+	
+	.small-text-2 {
+		background-color: #2b5f85;
+	}
+	
+	.small-text-3 {
+		background-color: #214864;
+	}
+	
+	.small-text-4 {
+		background-color: #77acd3;
+	}	
+	
+	[class*="small-text-"]:hover {
+		background-color: #000;
+	}
+	
+	
+	[class*="small-text-"] > a, [class*="small-text-"] > p, .scroll-overlay-text {
+	    bottom: 10%;
+	    color: #FFFFFF;
+	    font-size: 1.1875em;
+	    left: 8%;
+	    line-height: 1.3em;
+	    margin: 0;
+	    padding: 0;
+	    position: absolute;
+	    text-decoration: none;
+	    width: 84%;
+	}
+	
+	
+	.scroll-overlay-text {
+	    display: none;
+	    font-size: 1.35em;
+	    text-shadow: 1px 1px 1px #000000;
+	    z-index: 3;
+	}
+	
+	.homepage .scroll-overlay-text {
+		font-size: 1.875em;
+	}
+	
+		.scroll-overlay-text a, .scroll-overlay-text a:hover {
+			color: #fff;
+			text-decoration: underline;
+		}	
+	
+	.show3 .scroll-overlay-text, .show2 .scroll-overlay-text {
+		font-size: 1.1875em;
+	} 
+	
+	.inside_landing .scroll-overlay-text {
+		font-size: 1.5em;
+	} 	
+	
+	.overlay-headline {
+		bottom: 5%;
+		font-family: 'helvetica',arial,sans-serif;
+		font-weight: 200;
+		text-shadow: none;
+	}
+	
+		.overlay-headline p {
+		    font-size: 20px;
+		    margin: 0;
+		}
+		
+		.overlay-headline a {
+		    color: #FFC70E;
+		    font-size: 14px;
+		    font-weight: 400;
+		    margin: 0 15px 0 0;
+		}				
+	
+	.scroll-headline {
+	    bottom: 0;
+	    color: #FFFFFF;
+	    font-size: 3.75em;
+	    font-style: normal;
+	    left: 5%;
+	    position: absolute;
+	    text-shadow: 1px 2px 2px #000000;
+	    width: 90%;
+	    z-index: 3;
+	}
+	
+			
+
+.scroll-overlay {
+	background-color: rgb(0, 100, 255);
+	/* IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	
+	/* IE 5-7 */
+	filter: alpha(opacity=50);
+  
+    background-color: rgba(0, 100, 255, 0.3);
+    display: none;
+    height: 140px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.homepage .scroll-overlay {
+    height: 440px;
+}    
+
+.inside_landing .scroll-overlay {
+    height: 290px;
+}
+
+.show3 .scroll-overlay {
+	height: 140px;
+}
+
+.show2 .scroll-overlay {
+	height: 290px;
+}	
+
+div.showInfo {
+	position: relative;
+}
+
+/* show scroll overlay with css - will switch to js for smoother effect - just a proof of concept */
+div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text {
+	display: block;
+}
+.showInfo:hover .scroll-headline {
+    bottom: auto;
+    top: 5%;
+}
+
+
+#makeMeScrollable div.showInfo:hover > img {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+	
+	
