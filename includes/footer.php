@@ -15,18 +15,18 @@
 <!-- Le javascript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/buildout/js/1.8.2.jquery.min.js"></script>
+<script src="js/1.8.2.jquery.min.js"></script>
 
-<!-- <script src="/buildout/bootstrap/js/bootstrap.js"></script>		 -->
+<!-- <script src="bootstrap/js/bootstrap.js"></script>		 -->
 
-<script src="/latest/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
-<script src="/latest/js/jquery.mousewheel.min.js" type="text/javascript"></script>
-<script src="/latest/js/jquery.smoothdivscroll-1.2-min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+<script src="js/jquery.smoothdivscroll-1.2-min.js" type="text/javascript"></script>
 
 <!--
-<script src="/buildout/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
-<script src="/buildout/js/jquery.mousewheel.min.js" type="text/javascript"></script>
-<script src="/buildout/js/jquery.smoothdivscroll-1.2-min.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
+<script src="js/jquery.smoothdivscroll-1.2-min.js" type="text/javascript"></script>
 -->
 
 
