@@ -48,12 +48,12 @@
 	        <div class="span3 section_navigation">
 	        	<h2>About Touro</h2>
     			<ul>
-    				<li><a href="/buildout/about-inside.php" target="_blank">At a Glance</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Research</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Our Mission</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Our History</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Jewish Heritage</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Leadership</a>
+    				<li><a href="about-inside.php" target="_blank">At a Glance</a></li>
+					<li><a href="about-inside.php" target="_blank">Research</a></li>
+					<li><a href="about-inside.php" target="_blank">Our Mission</a></li>
+					<li><a href="about-inside.php" target="_blank">Our History</a></li>
+					<li><a href="about-inside.php" target="_blank">Jewish Heritage</a></li>
+					<li><a href="about-inside.php" target="_blank">Leadership</a>
 						<ul class="subnav">
 							<li><a href="#">Office of the President</a></li>
 							<li><a href="#">Central Administration</a></li>
@@ -61,8 +61,8 @@
 							<li><a href="#">Legal</a></li>
 						</ul>
 					</li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Accreditations</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Careers at Touro</a></li>
+					<li><a href="about-inside.php" target="_blank">Accreditations</a></li>
+					<li><a href="about-inside.php" target="_blank">Careers at Touro</a></li>
 				</ul>
 			</div>
 			<div class="span9 main">
@@ -74,7 +74,7 @@
 						<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
 					</div>	
 					<div class="span3 sidebar_feature">
-						<img src="/buildout/images/sidebar_feature_about.jpg" alt="Treating History" />							
+						<img src="images/sidebar_feature_about.jpg" alt="Treating History" />							
 						<div class="img_overlay">
 						</div>	
 						<div class="inner">

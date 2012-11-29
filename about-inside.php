@@ -39,7 +39,7 @@
 		<div id="makeMeScrollable">
 			<div>
 				<div class="showInfo">
-					<img src="/buildout/images/inside.jpg" />
+					<img src="images/inside.jpg" />
 					<div class="scroll-overlay-text">
 						<p>"My orthopedic surgeon told me, if you really want to <a href="#">help people</a>, go into physical therapy."</p>
 					</div>	
@@ -48,13 +48,13 @@
 			</div>
 			<div>	
 				<div class="showInfo">
-					<img src="/buildout/images/inside-02.jpg" />
+					<img src="images/inside-02.jpg" />
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
 			<div>
 				<div class="showInfo">
-					<img src="/buildout/images/inside-03.jpg" />
+					<img src="images/inside-03.jpg" />
 					<div class="scroll-overlay-text">
 						<p>"My orthopedic surgeon told me, if you really want to <a href="#">help people</a>, go into physical therapy."</p>
 					</div>	
@@ -63,13 +63,13 @@
 			</div>
 			<div>
 				<div class="showInfo">
-					<img src="/buildout/images/inside-04.jpg" />
+					<img src="images/inside-04.jpg" />
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
 			<div>	
 				<div class="showInfo">
-					<img src="/buildout/images/inside.jpg" />
+					<img src="images/inside.jpg" />
 					<div class="scroll-overlay-text">
 						<p>"My orthopedic surgeon told me, if you really want to <a href="#">help people</a>, go into physical therapy."</p>
 					</div>	
@@ -78,7 +78,7 @@
 			</div>
 			<div>
 				<div class="showInfo">
-					<img src="/buildout/images/inside-02.jpg" />
+					<img src="images/inside-02.jpg" />
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
@@ -90,12 +90,12 @@
 	        <div class="span3 section_navigation">
 	        	<h2>About Touro</h2>
     			<ul>
-    				<li><a href="/buildout/about-inside.php" target="_blank">At a Glance</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Research</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Our Mission</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Our History</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Jewish Heritage</a></li>
-					<li class="active"><a href="/buildout/about-inside.php" target="_blank">Leadership</a>
+    				<li><a href="about-inside.php" target="_blank">At a Glance</a></li>
+					<li><a href="about-inside.php" target="_blank">Research</a></li>
+					<li><a href="about-inside.php" target="_blank">Our Mission</a></li>
+					<li><a href="about-inside.php" target="_blank">Our History</a></li>
+					<li><a href="about-inside.php" target="_blank">Jewish Heritage</a></li>
+					<li class="active"><a href="about-inside.php" target="_blank">Leadership</a>
 						<ul class="subnav">
 							<li><a href="#">Office of the President</a></li>
 							<li><a href="#">Central Administration</a></li>
@@ -103,8 +103,8 @@
 							<li><a href="#">Legal</a></li>
 						</ul>
 					</li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Accreditations</a></li>
-					<li><a href="/buildout/about-inside.php" target="_blank">Careers at Touro</a></li>
+					<li><a href="about-inside.php" target="_blank">Accreditations</a></li>
+					<li><a href="about-inside.php" target="_blank">Careers at Touro</a></li>
 				</ul>
 			</div>
 			<div class="span9 main">
@@ -123,7 +123,7 @@
 						<p>Sed in lectus et nisl tempus elementum eu nec arcu. Nullam a aliquet lacus. Proin id felis nec enim consequat ultricies vitae sed ipsum. Duis sodales imperdiet pharetra. Curabitur suscipit lectus at diam facilisis ac dignissim eros dapibus. </p>
 					</div>	
 					<div class="span3 sidebar_feature">
-						<img src="/buildout/images/lamar-miller.jpg" alt="Treating History" />							
+						<img src="images/lamar-miller.jpg" alt="Treating History" />							
 						<div class="img_overlay">
 						</div>	
 						<div class="inner">
