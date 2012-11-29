@@ -19,8 +19,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
 
   <body class="body_about inside_landing">
