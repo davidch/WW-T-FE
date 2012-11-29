@@ -12,13 +12,15 @@
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/touro-custom.css" rel="stylesheet">
     <link href="css/touro-media.css" rel="stylesheet">
-
+    
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
+    
+    <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </head>
 
   <body class="body_about inside_landing">
@@ -36,6 +38,10 @@
 	<div class="scroll_bar">
 	  	<?php include('includes/scroll-inside-pages.php'); ?>
 	</div>  
+
+
+
+
 
     <div class="container" id="main_content">
 	    <div class="row">
