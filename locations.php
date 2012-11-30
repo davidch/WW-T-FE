@@ -25,7 +25,7 @@
     <style>
     
 		.map-holder {
-		    background: #bdaf6a;
+		    background: #e6c963;
 		    height: 366px;
 		    left: 0;
 		    position: relative;
@@ -44,6 +44,15 @@
 		    width: 870px;
 		}
 		
+		#map_ny {
+			left: 60px;
+		}
+		
+		#map_us {
+			left: 90px;
+		}
+		
+		
 		.marker-title, .marker-popup {
 			font-size: 14px;
 			padding: 4px;
@@ -56,41 +65,26 @@
 		}			
 		
 		.main .map_click {
-		    background: none repeat scroll 0 0 #A58F3A;
+		    background-color: #e9cc5a;
 		    color: #FFFFFF;
-		    height: 30px;
-		    left: -168px;
+		    height: 366px;
+		    left: 0;
 		    line-height: 30px;
 		    margin: 0;
-		    padding: 0 20px 0 0;
+		    padding: 0;
 		    position: absolute;
 		    text-align: right;
 		    text-decoration: none;
 		    text-transform: uppercase;
-		    top: 450px;
-		    transform: rotate(-90deg);
-		    width: 346px;
+		    top: 0;
+		    width: 30px;
 		    z-index: 2;
-    
-			/* Safari */
-			-webkit-transform: rotate(-90deg);
-			
-			/* Firefox */
-			-moz-transform: rotate(-90deg);
-			
-			/* IE */
-			-ms-transform: rotate(-90deg);
-			
-			/* Opera */
-			-o-transform: rotate(-90deg);
-			
-			/* Internet Explorer */
-			filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 		}
+
 		
 		.main #ny_map {
 			background-color: #436447;
-			left: 732px;
+			left: 900px;
 		}
 		
 		.main #ny_map .no-transform {
@@ -98,10 +92,14 @@
 		}
 		
 		.main #us_map {
-			background-color: #a92137;
-		    left: 762px;
-		}			
+			background-color: #ba0029;
+		    left: 930px;
+		}	
 		
+.rotated > img {
+    float: left;
+    padding: 20px 8px 0;
+}
 			
 		 
 	</style>
@@ -133,10 +131,17 @@
 	        	<a href="#us" class="left"><img src="images/map_sections/us-map.jpg" /></a>
 	        	
 	        	<br class="clear" />
-	        	<a href="#" class="map_click loaded" id="world_map">Around the World</a>
-	        	<a href="#" class="map_click" id="ny_map">New York City <span class="no-transform">and</span> Long Island</a>
-	        	<a href="#" class="map_click" id="us_map">United States</a>
+
 	        	<div class="map-holder">
+	        		<div class="map_click loaded" id="world_map">
+	        			<a href="#" class="rotated"><img src="images/map_sections/world-text.jpg" alt="Around the World" /></a>
+	        		</div>
+	        		<div class="map_click" id="ny_map">	
+	        			<a href="#" class="rotated"><img src="images/map_sections/ny-text.jpg" alt="New York City Long Island" /></a>
+	        		</div>
+	        		<div class="map_click" id="us_map">
+	        			<a href="#" class="rotated"><img src="images/map_sections/us-text.jpg" alt="United States" /></a>
+	        		</div>	
 	        		<div class="map_actual" id="map_world"></div>
 	        		<div class="map_actual" id="map_ny"></div>
 	        		<div class="map_actual" id="map_us"></div>
@@ -162,59 +167,60 @@
 				
 				if($(this).hasClass('open') !== true) {
 					
+					$('.map_click').removeClass('open');
 					$(this).addClass('open');
+					
+					$('.map_actual').css('z-index', '1');
 								
 					switch(newID){
 					
 						case 'world_map':
-							$('.map-holder').css('background', '#bdaf6a');
-							$('.map_actual').animate({width: '0', left : '30px'}, 1000);
-							$('#us_map').animate({left: '762px'}, 1000);
-							$('#ny_map').animate({left: '732px'}, 1000);					
-							$('#map_world').animate({width: '870px'}, 1000);
+							if($(this).hasClass('loaded') !== true) {
+								mapbox.auto('map_world', 'whitewhale.map-7srryw0v');
+								$(this).addClass('loaded');
+							}						
+							$('.map-holder').css('background', '#e9cc5a');
 							
-							$('.map_click').removeClass('open');
-						
-							$(this).addClass('open');
+							$('#ny_map').animate({width: '30px', left: '900px'}, 500);
+							$('#us_map').animate({width: '30px', left: '930px'}, 500);
+							$('#world_map').animate({width: '900px', left: '0'}, 500, function(){
+								$('#map_world').css('z-index', '9');
+							});							
 							
-						  break;
+							break;
 						  
 						case 'ny_map':
-							$('.map-holder').css('background', '#18935d');
-							$('.map_actual').animate({width: '0', left : '60px'}, 1000);
-							$('#us_map').animate({left: '762px'}, 1000);
-							
 							if($(this).hasClass('loaded') !== true) {
 								mapbox.auto('map_ny', 'whitewhale.map-rqcwlcce');
+								$(this).addClass('loaded')
 							}
 							
-							$('.map_click').removeClass('open');
-						
-							$(this).addClass('loaded').addClass('open').animate({left: '-138px'}, 1000, function () {
-								$('#map_ny').animate({width: '870px'}, 1000);
-							});						
+							$('.map-holder').css('background', '#436447');
+							
+							$('#us_map').animate({width: '30px', left: '930px'}, 500);
+							$(this).css('z-index','8').animate({left: '30px', width: '900px'}, 500, function(){
+								$('#map_ny').show().css('z-index', '9');
+							});														
 	
 						  break;
 						  
 						case 'us_map':
-							$('.map-holder').css('background', '#c8596c');
-							$('.map_actual').animate({width: '0', left : '90px'}, 1000);
-							$('#ny_map').animate({left: '-138px'}, 1000);	
-							
 							if($(this).hasClass('loaded') !== true) {
 								mapbox.auto('map_us', 'whitewhale.map-s1s65k18');
+								$(this).addClass('loaded');
 							}						
+							$('.map-holder').css('background', '#ba0029');
+							$('#ny_map').animate({width: '30px', left: '30px'}, 500);	
+							$('#us_map').css('z-index','8').animate({left: '60px', width: '900px'}, 500, function(){
+								$('#map_us').css('z-index', '9');
+							});							
 							
-							$('.map_click').removeClass('open');
-						
-							$(this).addClass('loaded').addClass('open').animate({left: '-108px'}, 1000, function () {
-								$('#map_us').animate({width: '870px'}, 1000);
-							});						
-						  
+
+										  
 						  break;					  
 						  
 						default:
-						  mapbox.auto('map', 'whitewhale.map-7srryw0v');	
+						  mapbox.auto('map_world', 'whitewhale.map-7srryw0v');	
 					}				
 				}		
 				

@@ -298,7 +298,10 @@ h4, h5, h6 {
 	    line-height: 1.4em;
 	    margin-top: 0;
 	}
-
+	
+	.body_locations .section_header {
+    	font-size: 1.8em;	
+    }
 
 	/*** $section_navigation ***/
 	
