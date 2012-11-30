@@ -363,38 +363,43 @@ h4, h5, h6 {
 				    font-weight: 600;
 				}						
 
-/* $breadcrumbs */
+/* $switch-controls */
 
-.breadcrumbs {
+.switch-controls {
     border-bottom: 1px solid #CCCCCC;
     margin: 0 0 25px;
     overflow: hidden;
     padding: 20px 0 0px;
 }
 
-	.breadcrumbs ul {
+	.switch-controls ul {
 	    font-size: 1.125em;
 	    list-style-type: none;
 	    margin-left: 0;
 	}
 	
-		.breadcrumbs li {
+		.switch-controls li {
 		    float: left;
 		    list-style: disc outside none;
 		    margin-left: 35px;
 		    padding-left: 15px;
 		}
 		
-		.breadcrumbs li.active {
-		    font-weight: 600;
+		.switch-controls li:first-child {
 		    list-style: none outside none;
 		    margin-left: 0;
-		    padding-left: 0;
+		    padding-left: 0;		    
 		}
-		
-			.breadcrumbs li a {
+	
+			.switch-controls li a {
 				text-decoration: underline;
 			}
+			
+			.switch-controls li.active a, .switch-controls li.active a:hover {
+				color: #06335A;
+				font-weight: 600;
+				text-decoration: none;
+			}	
 			
 /* $schools_list */			
 			
@@ -1102,5 +1107,89 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
     padding: 20px 8px 0;
 }
 
+
+/* switcher for content */
+
+.switcher {
+    display: none;
+}
+
+.switcher.first {
+    display: block;
+}
+
+
+/* $events */
+
+.event_item {
+	margin-top: 30px;
+	clear: both;
+}
+
+	.events_date {
+	    background-color: #FFFFFF;
+	    display: block;
+	    float: left;
+	    font-size: 12px;
+	    height: 45px;
+	    margin: 0 15px 0 0;
+	    padding: 0;
+	    position: relative;
+	    text-align: center;
+	    top: 2px;
+	    width: 40px;
+	}
+	
+	.events_date:after {
+	    background: none repeat scroll 0 0 transparent;
+	    bottom: 5px;
+	    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.45);
+	    content: "";
+	    height: 10px;
+	    position: absolute;
+	    right: 3px;
+	    transform: skew(15deg) rotate(6deg);
+	    width: 55%;
+	    z-index: -1;
+	}
+	
+	.events_date:before {
+	    background: none repeat scroll 0 0 transparent;
+	    bottom: 5px;
+	    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.45);
+	    content: "";
+	    height: 10px;
+	    left: 3px;
+	    position: absolute;
+	    transform: skew(-15deg) rotate(-6deg);
+	    width: 55%;
+	    z-index: -2;
+	}	
+		
+		.events_date .events_month {
+		    background-color: #0076a3;
+		    color: #FFFFFF;
+		    display: block;
+		    font-size: 12px;
+		    height: 20px;
+		    line-height: 20px;
+		    margin: 0 auto;
+		    padding: 0;
+		    text-align: center;
+		    text-transform: uppercase;
+		    width: 100%;
+		}
+		
+		.events_date .events_day {
+		    background: none repeat scroll 0 0 transparent;
+		    color: #000000;
+		    display: block;
+		    font-size: 22px;
+		    line-height: 24px;
+		    margin: 0 auto;
+		    padding: 0;
+		    text-align: center;
+		    width: 100%;
+		}
 	
 	

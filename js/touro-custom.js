@@ -43,6 +43,26 @@ $(document).ready(function(){
 			});
 		
 		}
+		
+		
+		// section_switcher functionality
+		if($('.switcher').length >= 1) {			
+		
+			$('.switch-controls li').click(function(){
+				
+				var newIndex = $(this).index();
+				
+				$('.switch-controls li').removeClass('active');
+				$(this).addClass('active');
+				
+				$('.switcher').slideUp(500);
+				
+				$('.switcher').eq(newIndex).slideDown(1000);
+				
+			});
+			
+		
+		}
 
 		// if there's a map-holder div and it's not the homepage - then go ahead and load the map
 		if($('.map-holder').length >= 1 && $('body').attr('class') !== 'homepage') {
