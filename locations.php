@@ -34,7 +34,7 @@
 		    z-index: 1;
 		}  
     
-		#map {
+		.map_actual {
 		    bottom: 0;
 		    height: 366px;
 		    left: 30px;
@@ -133,11 +133,13 @@
 	        	<a href="#us" class="left"><img src="images/map_sections/us-map.jpg" /></a>
 	        	
 	        	<br class="clear" />
-	        	<a href="#" class="map_click" id="world_map">Around the World</a>
+	        	<a href="#" class="map_click loaded" id="world_map">Around the World</a>
 	        	<a href="#" class="map_click" id="ny_map">New York City <span class="no-transform">and</span> Long Island</a>
 	        	<a href="#" class="map_click" id="us_map">United States</a>
 	        	<div class="map-holder">
-	        		<div id='map'></div>
+	        		<div class="map_actual" id="map_world"></div>
+	        		<div class="map_actual" id="map_ny"></div>
+	        		<div class="map_actual" id="map_us"></div>
 	        	</div>		
 
 	        </div><!-- end main --> 
@@ -150,54 +152,71 @@
 	<script>
 		$(document).ready(function(){
 		
-			mapbox.auto('map', 'whitewhale.map-7srryw0v');
+			mapbox.auto('map_world', 'whitewhale.map-7srryw0v');
 
 			$('.map_click').click(function(e){
 			
 				e.preventDefault();
-			
+							
 				var newID = $(this).attr('id');
 				
-				switch(newID){
-				
-					case 'world_map':
-					  	$('.map-holder').css('background', '#bdaf6a');
-						$('#map').html('').animate({width: '0', left : '30px'}, 1000);
-						$('#us_map').animate({left: '762px'}, 1000);
-						$('#ny_map').animate({left: '732px'}, 1000);	
-						$('#map').animate({width: '870px'}, 1000, function(){
-							mapbox.auto('map', 'whitewhale.map-7srryw0v');
-						});
-					  break;
-					  
-					case 'ny_map':
-						$('.map-holder').css('background', '#18935d');
-						$('#map').html('').animate({width: '0', left : '60px'}, 1000);
-						$('#us_map').animate({left: '762px'}, 1000);
-						$(this).animate({left: '-138px'}, 1000, function () {
-							$('#map').animate({width: '870px'}, 1000, function(){
-								mapbox.auto('map', 'whitewhale.map-rqcwlcce');
-							});
-						});						
-
-					  break;
-					  
-					case 'us_map':
-						$('.map-holder').css('background', '#c8596c');
-						$('#map').html('').animate({width: '0', left : '90px'}, 1000);
-						$('#ny_map').animate({left: '-138px'}, 1000);	
-						$(this).animate({left: '-108px'}, 1000, function () {
-							$('#map').animate({width: '870px'}, 1000, function(){
-								mapbox.auto('map', 'whitewhale.map-s1s65k18');
-							});
-						});						
-					  
-					  break;					  
-					  
-					default:
-					  mapbox.auto('map', 'whitewhale.map-7srryw0v');	
-				}				
+				if($(this).hasClass('open') !== true) {
+					
+					$(this).addClass('open');
+								
+					switch(newID){
+					
+						case 'world_map':
+							$('.map-holder').css('background', '#bdaf6a');
+							$('.map_actual').animate({width: '0', left : '30px'}, 1000);
+							$('#us_map').animate({left: '762px'}, 1000);
+							$('#ny_map').animate({left: '732px'}, 1000);					
+							$('#map_world').animate({width: '870px'}, 1000);
+							
+							$('.map_click').removeClass('open');
 						
+							$(this).addClass('open');
+							
+						  break;
+						  
+						case 'ny_map':
+							$('.map-holder').css('background', '#18935d');
+							$('.map_actual').animate({width: '0', left : '60px'}, 1000);
+							$('#us_map').animate({left: '762px'}, 1000);
+							
+							if($(this).hasClass('loaded') !== true) {
+								mapbox.auto('map_ny', 'whitewhale.map-rqcwlcce');
+							}
+							
+							$('.map_click').removeClass('open');
+						
+							$(this).addClass('loaded').addClass('open').animate({left: '-138px'}, 1000, function () {
+								$('#map_ny').animate({width: '870px'}, 1000);
+							});						
+	
+						  break;
+						  
+						case 'us_map':
+							$('.map-holder').css('background', '#c8596c');
+							$('.map_actual').animate({width: '0', left : '90px'}, 1000);
+							$('#ny_map').animate({left: '-138px'}, 1000);	
+							
+							if($(this).hasClass('loaded') !== true) {
+								mapbox.auto('map_us', 'whitewhale.map-s1s65k18');
+							}						
+							
+							$('.map_click').removeClass('open');
+						
+							$(this).addClass('loaded').addClass('open').animate({left: '-108px'}, 1000, function () {
+								$('#map_us').animate({width: '870px'}, 1000);
+							});						
+						  
+						  break;					  
+						  
+						default:
+						  mapbox.auto('map', 'whitewhale.map-7srryw0v');	
+					}				
+				}		
 				
 			});
 			
