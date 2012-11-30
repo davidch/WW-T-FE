@@ -83,22 +83,22 @@ $(document).ready(function(){
 		// map functionality
 		if($('.map-holder').length >= 1) {	
 
-			$('.map_click').click(function(e){
+			$('.map_click a, .loc_list a').click(function(e){
 			
 				e.preventDefault();
 							
-				var newID = $(this).attr('id');
+				var newID = $(this).attr('href');
 				
-				if($(this).hasClass('open') !== true) {
+				if($(this).parent().hasClass('open') !== true) {
 					
 					$('.map_click').removeClass('open');
-					$(this).addClass('open');
+					$(this).parent().addClass('open');
 					
 					$('.map_actual').css('z-index', '1');
 								
 					switch(newID){
 					
-						case 'world_map':
+						case '#world_map':
 							if($(this).hasClass('loaded') !== true) {
 								mapbox.auto('map_world', 'whitewhale.map-7srryw0v');
 								$(this).addClass('loaded');
@@ -112,20 +112,20 @@ $(document).ready(function(){
 							
 							break;
 						  
-						case 'ny_map':
+						case '#ny_map':
 							if($(this).hasClass('loaded') !== true) {
 								mapbox.auto('map_ny', 'whitewhale.map-rqcwlcce');
 								$(this).addClass('loaded')
 							}
 							
 							$('#us_map').animate({width: '30px', left: '930px'}, 500);
-							$(this).css('z-index','8').animate({left: '30px', width: '900px'}, 500, function(){
+							$('#ny_map').css('z-index','8').animate({left: '30px', width: '900px'}, 500, function(){
 								$('#map_ny').show().css('z-index', '9');
 							});														
 	
 						  break;
 						  
-						case 'us_map':
+						case '#us_map':
 							if($(this).hasClass('loaded') !== true) {
 								mapbox.auto('map_us', 'whitewhale.map-s1s65k18');
 								$(this).addClass('loaded');

@@ -1030,6 +1030,63 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 
 /* locations map */
 
+.loc_list {
+	float: left;
+}
+
+.world_list {
+    background-color: #BCAC6E;
+}
+
+.ny_list {
+    background-color: #488d5c;
+    width: 480px;
+}
+
+.us_list {
+    background-color: #ba6470;
+}
+	
+	.loc_list h3, .loc_list a {
+	    color: #FFFFFF;
+	    display: inline-block;
+	    font-family: helvetica,sans-serif;
+	    font-size: 14px;
+	    font-style: normal;
+	    height: auto;
+	    margin: 0;
+	    padding: 7px 0 6px 10px;
+	    text-decoration: none;
+	    width: auto;
+	}
+	
+	.loc_list h3 {
+	    background-color: #a68f3a;
+	    text-transform: uppercase;
+	    width: 210px;
+	}
+	
+	.ny_list h3 {
+	    background-color: #1e5200;
+	    width: 470px;
+	}
+	
+	.us_list h3 {	
+	    background-color: #a63143;
+	}	
+
+	.loc_list ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	
+		.loc_list ul li {
+		    border-top: 1px solid #FFFFFF;
+		    margin: 0;	
+		    padding: 0;
+		}	
+
 		.map-holder {
 		    background: #e6c963;
 		    height: 366px;
@@ -1063,12 +1120,6 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 			font-size: 14px;
 			padding: 4px;
 		}
-		
-		.left {
-			float: left;
-			margin: 0;
-			padding: 0;
-		}			
 		
 		.main .map_click, .map_click {
 		    background-color: #e9cc5a;
