@@ -1,4 +1,4 @@
-	$(document).ready(function(){
+$(document).ready(function(){
 		
 	if($('body').attr('class') !== 'homepage') {
 		
@@ -44,9 +44,24 @@
 		
 		}
 
-		if($('.map-holder').length >= 1) {
-
+		// if there's a map-holder div and it's not the homepage - then go ahead and load the map
+		if($('.map-holder').length >= 1 && $('body').attr('class') !== 'homepage') {
+		
 			mapbox.auto('map_world', 'whitewhale.map-7srryw0v');
+			
+		} else if($('.map-holder').length >= 1 && $('body').attr('class') === 'homepage') {
+		
+		// if there's a map-holder div and it IS the homepage - then load the map when 'locations' is clicked
+		
+			$('.locations').click(function(){
+				mapbox.auto('map_world', 'whitewhale.map-7srryw0v');
+			});
+			
+		}
+		
+		
+		// map functionality
+		if($('.map-holder').length >= 1) {	
 
 			$('.map_click').click(function(e){
 			

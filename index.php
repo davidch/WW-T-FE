@@ -308,8 +308,30 @@
 	        	
 	        	
 	        	<div class="locations row slider">
-	        		<p class="section_header span12">Touro is everywhere: in New York, across the country, around the world.</p>
-	        		<img src="images/panel_map_1.jpg" class="span12" />
+			        <div class="span12" style="position: relative; height: 700px;">
+			        	<h2 class="section_header">Touro is everywhere: in New York, across the country, around the world.</h2>
+			        	<a href="#world" class="left"><img src="images/map_sections/world-map.jpg" /></a>
+			        	<a href="#nyc" class="left"><img src="images/map_sections/ny-map.jpg" /></a>
+			        	<a href="#us" class="left"><img src="images/map_sections/us-map.jpg" /></a>
+			        	
+			        	<br class="clear" />
+		
+			        	<div class="map-holder">
+			        		<div class="map_click loaded" id="world_map">
+			        			<a href="#" class="rotated"><img src="images/map_sections/world-text.jpg" alt="Around the World" /></a>
+			        		</div>
+			        		<div class="map_click" id="ny_map">	
+			        			<a href="#" class="rotated"><img src="images/map_sections/ny-text.jpg" alt="New York City Long Island" /></a>
+			        		</div>
+			        		<div class="map_click" id="us_map">
+			        			<a href="#" class="rotated"><img src="images/map_sections/us-text.jpg" alt="United States" /></a>
+			        		</div>	
+			        		<div class="map_actual" id="map_world"></div>
+			        		<div class="map_actual" id="map_ny"></div>
+			        		<div class="map_actual" id="map_us"></div>
+			        	</div>		
+		
+			        </div><!-- end main --> 
 	        	</div><!-- end locations -->
 
 
@@ -427,83 +449,8 @@
    </div> <!-- /container -->
 
 	<footer class="clear">
-		<div class="container skyline">
-		</div>
-		<div class="bg-color">
-			<div class="container">
-				<div class="row">
-					<br />
-					<p class="span5"><strong>Touro</strong> College and University System<br />
-					27-33 West 23 Street<br />
-					New York, NY 10010<br />
-					(212) 463-0400</p>
-				</div>
-			</div>
-		</div>	
-		
-		<!-- Le javascript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="js/1.8.2.jquery.min.js"></script>
-		
-		<!-- <script src="bootstrap/js/bootstrap.js"></script>		 -->
-		
-		<script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
-		<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
-		<script src="js/jquery.smoothdivscroll-1.2-min.js" type="text/javascript"></script>
-		
-		
-		<script type="text/javascript">
-			$(document).ready(function(){
-				
-			if($('body').attr('class') !== 'homepage') {
-				
-					$("#makeMeScrollable").smoothDivScroll({ 
-						mousewheelScrolling: true,
-						visibleHotSpotBackgrounds: "never",
-						scrollToEasingFunction: "easeOutCubic",
-						hotSpotScrollingStep: 5,
-						hotSpotScrollingInterval: 2
-					});			
-					
-					
-				} else if($('body').attr('class') === 'homepage') { 		
-					
-					// Switch panels on nav clicks
-					
-					$('#main_navigation > li > a').click(function(e){
-						e.preventDefault();
-								
-						  var open = $(this).parent('li').attr('class');
-						  $('#main_navigation > li > a').removeClass('active');
-						  
-						  $('#site_sections div.slider').slideUp();
-						  
-						  if($('#site_sections div.' + open).is(":visible") === true) {
-							  $('#site_sections div.' + open).slideUp();
-						  }else {
-							  $('#site_sections div.' + open).slideDown(1000);  
-							  $(this).addClass('active');
-						  }
-						  			  
-					  });
-					
-					// Horizontal scrolling with smoothDivScroll plugin			
-					$("#makeMeScrollable").smoothDivScroll({ 
-						mousewheelScrolling: true,
-						visibleHotSpotBackgrounds: "never",
-						scrollToEasingFunction: "easeOutCubic",
-						hotSpotScrollingStep: 5,
-						hotSpotScrollingInterval: 2,
-						startAtElementId: "mosaic-right"
-					});
-				
-				}
-				
-				
-								
-			});
-		</script>	
+	    <?php include('includes/footer.php'); ?>
+
 	</footer>
   </body>
 </html>

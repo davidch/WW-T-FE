@@ -1065,7 +1065,7 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 			padding: 0;
 		}			
 		
-		.main .map_click {
+		.main .map_click, .map_click {
 		    background-color: #e9cc5a;
 		    color: #FFFFFF;
 		    height: 366px;
@@ -1083,16 +1083,16 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 		}
 
 		
-		.main #ny_map {
+		#ny_map {
 			background-color: #436447;
 			left: 900px;
 		}
 		
-		.main #ny_map .no-transform {
+		#ny_map .no-transform {
 			text-transform: none;
 		}
 		
-		.main #us_map {
+		#us_map {
 			background-color: #ba0029;
 		    left: 930px;
 		}	

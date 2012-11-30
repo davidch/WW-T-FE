@@ -84,7 +84,8 @@
 	        	<div class="breadcrumbs">
 	        		<?php include('includes/breadcrumbs.php'); ?>
 	        	</div>
-	        	<div class="row"> 
+	        	
+	        	<div class="row switcher"> 
 		        	<div class="span4">
 						<h3>Osteopathic Medicine</h3>
 						<p><em>Osteopathic physicians</em> lectus et nisl tempus elementum eu nec arcu. Nullam a aliquet lacus. Proin id felis nec enim consequat ultricies vitae sed ipsum. Duis sodales imperdiet pharetra. Curabitur suscipit lectus at diam facilisis ac dignissim eros dapibus.</p>
@@ -132,6 +133,55 @@
 						</ul>				
 		        	</div><!-- end span3 -->
 		        </div><!-- end row -->	
+		        <div class="row switcher"> 
+		        	<div class="span4">
+						<h3>Osteopathic Medicine</h3>
+						<p><em>Osteopathic physicians</em> lectus et nisl tempus elementum eu nec arcu. Nullam a aliquet lacus. Proin id felis nec enim consequat ultricies vitae sed ipsum. Duis sodales imperdiet pharetra. Curabitur suscipit lectus at diam facilisis ac dignissim eros dapibus.</p>
+						<h4>Doctor of Osteopathic Medicine (DO)</h4>
+						<ul>
+							<li><a href="#">Touro College of Osteopathic Medicine</a></li>
+							<li><a href="#">Touro University California College of Osteopathic Medicine</a></li>
+						</ul>
+						<br />
+						<h3>Nursing</h3>
+						<p><em>Nurses</em> lectus et nisl tempus elementum eu nec arcu. Nullam a aliquet lacus. Proin id felis nec enim consequat ultricies vitae sed ipsum. Duis sodales imperdiet pharetra. Curabitur suscipit lectus at diam facilisis ac dignissim eros dapibus.</p>
+						<h4>Registered Nurse (RN)</h4>
+						<ul>
+							<li><a href="#">Lander College for Women</a></li>
+							<li><a href="#">School of Health Sciences</a></li>
+						</ul>	   	
+		        	</div><!-- end span3 -->
+		        	<div class="span1"></div>
+		        	<div class="span4">
+						<h3>Physical Therapy</h3>
+						<p><em>Physical therapists</em> aliquet lacus. Proin id felis nec enim consequat ultricies vitae sed ipsum. Duis sodales imperdiet pharetra. Curabitur suscipit lectus at diam facilisis ac dignissim eros dapibus lectus et nisl tempus elementum eu nec arcu.</p>
+						
+						<h4>Doctor of Physical Therapy (DPT)</h4>
+						<ul>
+							<li><a href="#">School of Health Sciences</a></li>
+							<li><a href="#">Touro University California College of Education and Health Sciences</a></li>
+							<li><a href="#">Touro University Nevada College of Health and Human Services</a></li>
+						</ul>	
+						<h4>Masters in Physical Therapy (MPT)</h4>
+						<ul>
+							<li><a href="#">School of Health Sciences</a></li>
+						</ul>	
+						<h4>Undergraduate Degrees</h4>
+						<ul>
+							<li><a href="#">Lander College for Women</a></li>
+							<li><a href="#">Lander College for Men</a></li>
+						</ul>
+						<br />
+						<h3>Pharmacy</h3>
+						<p><em>Pharmacists</em> sodales imperdiet pharetra. Curabitur suscipit lectus at diam facilisis ac dignissim eros dapibus lectus et nisl tempus elementum eu aliquet lacus. tricies vitae sed ipsum. Duis nec arcu.</p>
+						<h4>Doctor of Pharmacy (PharmD)</h4>
+						<ul>
+							<li><a href="#">Touro College of Pharmacy</a></li>
+							<li><a href="#">Touro University California College of Pharmacy</a></li>			
+						</ul>				
+		        	</div><!-- end span3 -->
+		        </div><!-- end row -->	
+		        
 	        </div><!-- end main --> 
 	   </div><!-- end row -->	      
    </div> <!-- /container -->
