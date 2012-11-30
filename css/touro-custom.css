@@ -1021,5 +1021,86 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
     -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
 }
 
+
+
+/* locations map */
+
+		.map-holder {
+		    background: #e6c963;
+		    height: 366px;
+		    left: 0;
+		    position: relative;
+		    top: 24px;
+		    width: 960px;
+		    z-index: 1;
+		}  
+    
+		.map_actual {
+		    bottom: 0;
+		    height: 366px;
+		    left: 30px;
+		    position: absolute;
+		    top: 0;
+		    overflow: hidden;
+		    width: 870px;
+		}
+		
+		#map_ny {
+			left: 60px;
+		}
+		
+		#map_us {
+			left: 90px;
+		}
+		
+		
+		.marker-title, .marker-popup {
+			font-size: 14px;
+			padding: 4px;
+		}
+		
+		.left {
+			float: left;
+			margin: 0;
+			padding: 0;
+		}			
+		
+		.main .map_click {
+		    background-color: #e9cc5a;
+		    color: #FFFFFF;
+		    height: 366px;
+		    left: 0;
+		    line-height: 30px;
+		    margin: 0;
+		    padding: 0;
+		    position: absolute;
+		    text-align: right;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		    top: 0;
+		    width: 30px;
+		    z-index: 2;
+		}
+
+		
+		.main #ny_map {
+			background-color: #436447;
+			left: 900px;
+		}
+		
+		.main #ny_map .no-transform {
+			text-transform: none;
+		}
+		
+		.main #us_map {
+			background-color: #ba0029;
+		    left: 930px;
+		}	
+		
+.rotated > img {
+    float: left;
+    padding: 20px 8px 0;
+}
+
 	
 	
