@@ -91,7 +91,7 @@ $(document).ready(function(){
 				
 				if($(this).parent().hasClass('open') !== true) {
 					
-					$('.map_click').removeClass('open');
+					$('.map_click, .loc_list li').removeClass('open');
 					$(this).parent().addClass('open');
 					
 					$('.map_actual').css('z-index', '1');
