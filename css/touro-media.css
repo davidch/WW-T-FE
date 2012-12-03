@@ -78,6 +78,10 @@ footer .bg-color {
     z-index: 99;
 }
 
+.main_navigation {
+    list-style-type: none;
+}
+
 .top_link a {
     color: #FFC70E;
     display: inline-block;
