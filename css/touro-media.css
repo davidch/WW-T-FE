@@ -37,39 +37,164 @@
 
 @media screen and (max-width: 479px) {
 
-.navbar .nav {
-    float: left;
+body {
+	max-width: 480px;
+	padding: 0;
 }
 
-#search_bar {
-    border-bottom: 1px solid #C2C2BD;
-    padding-bottom: 80px;
+#main_navigation {
+	display: none;
 }
 
-	#search {
-	    margin: 4px 0 0;
-	    position: absolute;
-	    right: 30px;
-	    top: 165px;
+footer p {
+    font-size: 0.65em;
+    padding-left: 10px;
+}
+
+footer .container .row {
+    background-size: 60px auto;
+}
+
+#footer_nav {
+    border-top: 6px solid #2B3D54;
+    display: block;
+    margin: 20px 0 0;
+    padding: 20px 0 0;
+}
+
+#footer_nav > a.top_link {
+    background: none repeat scroll 0 0 yellow;
+    bottom: 80px;
+    font-size: 11px;
+    padding: 2px 7px 2px 8px;
+    position: fixed;
+    right: 0;
+    z-index: 99;
+}
+
+.skip_nav {
+    color: #FFC70E;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.container {
+	padding: 0 10px;
+}	
+
+.switch-controls li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sidebar_feature {
+	width: 220px;
+	margin: 0 auto 30px;
+}
+
+.news_item {
+	border: none;
+}	
+
+.navbar, .navbar a {
+    font-size: 14px;
+    margin: 0 0 8px;
+}
+
+.navbar .brand {
+	display: block;
+	float: none;
+	font-size: 15px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+}    
+    
+	.navbar .nav {
+	    float: left;
+	    display: none;
 	}
 	
-#main_navigation {
-    margin: 14px 0 0;
+	.navbar-inner {
+		padding: 0;
+	}	
+	
+.navbar .nav > li > a, .navbar .nav > li > a:hover {
+    padding: 0 0.5em;
 }	
-		#main_navigation li a {
-		    font-size: 1em;
-		}
+	
+	#search_bar, .homepage #search_bar {
+	    border-bottom: 1px solid #C2C2BD;
+	    margin-top: 10px;
+	    padding-bottom: 30px;
+	}
+	
+#search, .homepage #search {
+    margin: 0;
+    position: static;
+    width: 100%;
+}
 
-	.section_navigation li {
-	    float: right;
-	    margin: 0 0 0.5em 1em;
-	    text-decoration: underline;
-	}		
-
-.section_navigation .subnav {
-	border: none;
-	background: transparent;
-}	
+.homepage #search .search_field, #search .search_field {
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7) inset;
+    display: block;
+    margin: 30px auto 0;
+}
+		
+	#main_navigation {
+	    margin: 14px 0 0;
+	}	
+			#main_navigation li a {
+			    font-size: 1em;
+			}
+	
+		.section_navigation li {
+		    float: right;
+		    margin: 0 0 0.5em .5em;
+		    text-decoration: underline;
+		}		
+	
+	.section_navigation .subnav {
+		border: none;
+		background: transparent;
+	}	
+	
+	.homepage #search_bar img {
+		display: block;
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	.homepage #main_content {
+		display: none;
+	}
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
