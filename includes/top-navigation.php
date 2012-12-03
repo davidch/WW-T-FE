@@ -1,7 +1,7 @@
 <div class="navbar navbar-static-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="index.php">The Touro College and University System</a>
+      <a class="brand" name="top" href="index.php">The Touro College and University System</a>
       <div>
         <ul class="nav">
           <li><a href="students_gateway.php">Students</a></li>
