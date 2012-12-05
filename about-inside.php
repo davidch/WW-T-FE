@@ -25,7 +25,7 @@
 	<!-- scroll area -->
 	<div class="scroll_bar">
 		<div id="makeMeScrollable">
-			<div>
+			<div class="col">
 				<div class="showInfo">
 					<img src="images/inside.jpg" />
 					<div class="scroll-overlay-text">
@@ -34,13 +34,13 @@
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
-			<div>	
+			<div class="col">	
 				<div class="showInfo">
 					<img src="images/inside-02.jpg" />
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
-			<div>
+			<div class="col">	
 				<div class="showInfo">
 					<img src="images/inside-03.jpg" />
 					<div class="scroll-overlay-text">
@@ -49,13 +49,13 @@
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
-			<div>
+			<div class="col">	
 				<div class="showInfo">
 					<img src="images/inside-04.jpg" />
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
-			<div>	
+			<div class="col">	
 				<div class="showInfo">
 					<img src="images/inside.jpg" />
 					<div class="scroll-overlay-text">
@@ -64,7 +64,7 @@
 					<div class="scroll-overlay"></div>
 				</div>
 			</div>
-			<div>
+			<div class="col">	
 				<div class="showInfo">
 					<img src="images/inside-02.jpg" />
 					<div class="scroll-overlay"></div>

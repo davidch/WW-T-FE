@@ -4,6 +4,10 @@ body {
 	font-size: 16px;
 }
 
+#footer_nav, .skip_nav {
+	display: none;
+}
+
 .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 960px;
 }
@@ -47,6 +51,7 @@ h2 {
 h3 {
   color: #991a22;
   font-size: 1.25em;
+  line-height: 1.3em;
   margin: 0 0 1em;  
 }
 
@@ -179,6 +184,11 @@ input[type="color"],
 
 
 /******* Touro specific styles *******/
+
+input:focus::-webkit-input-placeholder
+{
+    color: #fff;
+}
 
 a.active {
 	color: #991a22;
@@ -349,7 +359,7 @@ h4, h5, h6 {
 				    font-size: 12px;
 				    list-style-type: none;
 				    margin: 0 -10px 0 0;
-				    padding: 16px 0 0;
+				    padding: 15px 15px 5px 0;
 				}
 				
 				.section_navigation li.active .subnav {
@@ -359,8 +369,9 @@ h4, h5, h6 {
 				.section_navigation li.active .subnav a {
 				    background: none repeat scroll 0 0 transparent;
 				    color: #06335A;
-				    display: inline;
+				    display: inline-block;
 				    font-weight: 600;
+				    padding: 0 0 0 10px;
 				}						
 
 /* $switch-controls */
@@ -410,26 +421,22 @@ h4, h5, h6 {
 }
 
 	.schools_list ul {
-	    list-style-type: none;
+	    font-size: 14px;
+	    list-style-type: disc;
 	}
+		
 	
-		.schools_list ul li:before {
-		    content: "- ";
-		    float: left;
-		    margin-left: -14px;
+		.schools_list a {
+		    color: #333333;
+		    display: block;
+		    font-weight: 200;
+		    margin: 0 0 1em;
+		    text-decoration: none;
 		}
-	
-			.schools_list a {
-			    color: #333333;
-			    display: block;
-			    font-weight: 200;
-			    margin: 0 0 1em;
-			    text-decoration: none;
-			}
-			
-			.schools_list a:hover {
-				text-decoration: underline;
-			}	
+		
+		.schools_list a:hover {
+			text-decoration: underline;
+		}	
 			
 /* $sidebar_feature */	
 
@@ -455,6 +462,10 @@ h4, h5, h6 {
     transform: skew(15deg) rotate(6deg);
     width: 70%;
     z-index: -1;
+    
+    -webkit-transform: skew(15deg) rotate(6deg);
+    -moz-transform: skew(15deg) rotate(6deg);
+    
 }
 .sidebar_feature:before {
     background: none repeat scroll 0 0 transparent;
@@ -467,6 +478,9 @@ h4, h5, h6 {
     transform: skew(-15deg) rotate(-6deg);
     width: 70%;
     z-index: -2;
+    
+    -webkit-transform: skew(15deg) rotate(-6deg);
+    -moz-transform: skew(15deg) rotate(-6deg);    
 }
 
 
@@ -479,6 +493,9 @@ h4, h5, h6 {
     transform: skew(11deg) rotate(8deg);
     width: 50px;
     z-index: -1;
+    
+    -webkit-transform: skew(11deg) rotate(8deg);
+    -moz-transform: skew(11deg) rotate(8deg);    
 }
 
 .sidebar_feature.no_shadow:before {
@@ -490,6 +507,10 @@ h4, h5, h6 {
     top: 6px;
     transform: skew(-11deg) rotate(-8deg);
     width: 50px;
+    
+    -webkit-transform: skew(-11deg) rotate(-8deg);
+    -moz-transform: skew(-11deg) rotate(-8deg);    
+    
 }
 	
 	.sidebar_feature img {
@@ -544,12 +565,17 @@ h4, h5, h6 {
 		color: #333;
 	}
 	
+	
 /*  $sidebar_feature - large $image with triangle  */	
 
 .feature_image {
 	background: #fff;
 	position: relative;
 }
+
+	.feature_image .inner {
+	    height: 198px;
+	}    
 
 	.feature_image > img {
 	    display: block;
@@ -568,6 +594,12 @@ h4, h5, h6 {
 	    top: 20px;
 	    width: 19px;
 	}
+	
+	.feature_image > .sidebar_feature p {
+	    display: block;
+	    max-height: 99px;
+	    overflow: hidden;
+	}	
 
 /* $news_item */
 
@@ -613,7 +645,40 @@ h4, h5, h6 {
 		    font-size: 0.875em;
 		    font-weight: 600;
 		    text-decoration: none;
-		}	
+		}
+		
+.has_image {
+    position: relative;
+}			
+			
+	.has_image > img {
+	    left: 19px;
+	    position: absolute;
+	    top: 0;
+	    z-index: 1;
+	}
+	
+	.has_image > a {
+	    background: url("../images/mosaic/IE7-overlay.png") repeat center center transparent;
+	    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+	    color: #FFFFFF;
+	    display: none;
+	    font-family: georgia, serif;
+	    font-size: 19px;
+	    font-weight: 400;
+	    height: 100px;
+	    left: 20px;
+	    line-height: 1.4em;
+	    padding: 10px;
+	    position: absolute;
+	    top: 0;
+	    width: 180px;
+	    z-index: 2;
+	}
+	
+	.has_image:hover a {
+		display: block;
+	}				
 	
 	
 /****** $footer *****/
@@ -655,7 +720,6 @@ footer {
     font-size: 1.15em;
     font-style: normal;
     font-weight: 600;
-    margin: 0.25em 0 1em;
 }				
 	
 /* $quick_search */
@@ -915,6 +979,10 @@ z-index:11;
 	    width: 84%;
 	}
 	
+	[class*="small-text-"] > a:hover {
+		text-decoration: underline;
+	}
+	
 	
 	.scroll-overlay-text {
 	    display: none;
@@ -927,10 +995,13 @@ z-index:11;
 		font-size: 1.875em;
 	}
 	
-		.scroll-overlay-text a, .scroll-overlay-text a:hover {
-			color: #fff;
+		.scroll-overlay-text a {
+			color: #FFC70E;
+		}
+		
+		.scroll-overlay-text a:hover {	
 			text-decoration: underline;
-		}	
+		}		
 	
 	.show3 .scroll-overlay-text, .show2 .scroll-overlay-text {
 		font-size: 1.1875em;
@@ -1057,7 +1128,7 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 	    margin: 0;
 	    padding: 7px 0 6px 10px;
 	    text-decoration: none;
-	    width: auto;
+	    width: 100%;
 	}
 	
 	.loc_list h3 {
@@ -1065,6 +1136,10 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 	    text-transform: uppercase;
 	    width: 210px;
 	}
+	
+		.loc_list h3 a {
+		    padding: 0;
+		}	
 	
 	.ny_list h3 {
 	    background-color: #1e5200;
@@ -1088,14 +1163,15 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 		}	
 
 		.map-holder {
-		    background: #e6c963;
+		    background: none repeat scroll 0 0 #E6C963;
 		    height: 366px;
 		    left: 0;
+		    margin-bottom: 60px;
 		    position: relative;
 		    top: 24px;
 		    width: 960px;
 		    z-index: 1;
-		}  
+		} 
     
 		.map_actual {
 		    bottom: 0;
@@ -1116,9 +1192,9 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 		}
 		
 		
-		.marker-title, .marker-popup {
+		.marker-tooltip .marker-title, .marker-tooltip .marker-popup {
 			font-size: 14px;
-			padding: 4px;
+			padding: 2px 4px;
 		}
 		
 		.main .map_click, .map_click {
@@ -1141,7 +1217,8 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 		
 		#ny_map {
 			background-color: #436447;
-			left: 900px;
+			left: auto;
+			right: 30px;
 		}
 		
 		#ny_map .no-transform {
@@ -1150,14 +1227,18 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 		
 		#us_map {
 			background-color: #ba0029;
-		    left: 930px;
+		    left: auto;
+		    right: 0;
 		}	
 		
 .rotated > img {
     float: left;
-    padding: 20px 8px 0;
+    padding: 10px 7px 0;
 }
 
+#ny_map .rotated > img {
+    padding: 10px 5px 0;
+}
 
 /* switcher for content */
 

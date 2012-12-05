@@ -13,22 +13,7 @@
 
   <body class="homepage">
 
-	  <div class="navbar navbar-static-top">
-		  <div class="navbar-inner">
-		    <div class="container">
-		      <a class="brand" href="index.php">The Touro College and University System</a>
-		      <div>
-		        <ul class="nav">
-		          <li><a href="students_gateway.php">Students</a></li>
-		          <li><a href="students_gateway.php">Faculty</a></li>
-		          <li><a href="students_gateway.php">Staff</a></li>
-		          <li><a href="students_gateway.php">Alumni</a></li>
-		          <li class="last"><a href="students_gateway.php">Giving</a></li>
-		        </ul>
-		      </div><!--/.nav-collapse -->
-		    </div>
-		  </div>
-		</div>
+	  <?php include('includes/top-navigation.php'); ?>
 	  
 	  <div class="container">
 	  	<div id="search_bar">
@@ -39,19 +24,19 @@
 	  
 	<!-- scroll area -->
 	<div id="makeMeScrollable">
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-01.jpg" />
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>	
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-02.jpg" />
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>	
-		<div class="show3">
+		<div class="col show3">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-03.jpg" />
 				<div class="scroll-overlay"></div>
@@ -64,13 +49,13 @@
 				<a href="#">Singing for Harlem's supper (or lunch)</a>
 			</div>	
 		</div>
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-04.jpg" />
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>
-		<div class="show3">
+		<div class="col show3">
 			<div class="small-text-1">
 				<p>Don't fear changing autism diagnoses</p>
 			</div>	
@@ -81,25 +66,25 @@
 				<p>Dr. Melissa Earle speaks on NBC Nightly News about treating PTSD</p>		
 			</div>			
 		</div>	
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-06.jpg" />
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-07.jpg" />
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>	
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-08.jpg" />
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>
-		<div class="show3">
+		<div class="col show3">
 			<div class="small-text-2">
 				<p>Translating 'child-centered learning' to the college level</p>
 			</div>	
@@ -111,13 +96,13 @@
 				<div class="scroll-overlay"></div>
 			</div>				
 		</div>
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-10.jpg" />
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>
-		<div class="show2">
+		<div class="col show2">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-11.jpg" />
 				<div class="scroll-overlay"></div>
@@ -126,7 +111,7 @@
 				<p>LAS students inducted into Sigma Delta Kappa</p>
 			</div>			
 		</div>
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-12.jpg" />
 				<div class="scroll-overlay-text overlay-headline">
@@ -137,7 +122,7 @@
 				<h2 class="scroll-headline">From Iran to Touro</h2>
 			</div>
 		</div>		
-		<div class="show3">
+		<div class="col show3">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-13.jpg" />
 				<div class="scroll-overlay-text">
@@ -152,7 +137,7 @@
 				<p>Touro Law student volunteers provide tax assistance</p>
 			</div>					
 		</div>
-		<div>
+		<div class="col">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-14.jpg" />
 				<div class="scroll-overlay-text">
@@ -161,7 +146,7 @@
 				<div class="scroll-overlay"></div>
 			</div>
 		</div>							
-		<div class="show2" id="mosaic-right">
+		<div class="col show2" id="mosaic-right">
 			<div class="showInfo">
 				<img src="images/mosaic/mosaic-15.jpg" />
 				<div class="scroll-overlay"></div>
@@ -308,51 +293,50 @@
 	        	
 	        	
 	        	<div class="locations row slider">
-			        <div class="span12" style="position: relative; height: 700px;">
+			        <div class="span12">
 			        	<h2 class="section_header">Touro is everywhere: in New York, across the country, around the world.</h2>
 			        	<div class="row">
 				        	<div class="world_list loc_list span3">	
-				        		<h3>Around the World</h3>
+				        		<h3><a href="#world_map">Around the World</a></h3>
 					        	<ul>
 					        		<li><a href="#world_map">Berlin</a></li>
-					        		<li><a href="#world_map">Paris</a></li>
-					        		<li><a href="#world_map">Israel</a></li>
-					        		<li><a href="#world_map">Moscow</a></li>
+					        		<li><a href="#world_map">Paris</a></li>
+					        		<li><a href="#world_map">Israel</a></li>
+					        		<li><a href="#world_map">Moscow</a></li>
 					        	</ul>
 					        </div>		
 				        	<div class="ny_list loc_list span6">	
-				        		<h3>NEW YORK CITY and LONG ISLAND</h3>
+				        		<h3><a href="#ny_map">NEW YORK CITY and LONG ISLAND</a></h3>
 					        	<ul>
 					        		<li><a href="#ny_map">Schools</a></li>
-					        		<li><a href="#ny_map">Undergraduate Programs</a></li>
-					        		<li><a href="#ny_map">Graduate Programs</a></li>
-					        		<li><a href="#ny_map">Judaic Studies</a></li>
+					        		<li><a href="#ny_map">Undergraduate Programs</a></li>
+					        		<li><a href="#ny_map">Graduate Programs</a></li>
+					        		<li><a href="#ny_map">Judaic Studies</a></li>
 					        	</ul>
 					        </div>	
 				        	<div class="us_list loc_list span3">	
-				        		<h3>UNITED STATES</h3>
+				        		<h3><a href="#us_map">UNITED STATES</a></h3>
 					        	<ul>
-					        		<li><a href="#us_map">Northern California</a></li>
-					        		<li><a href="#us_map">Southern California</a></li>
-					        		<li><a href="#us_map">Florida</a></li>
-					        		<li><a href="#us_map">Nevada</a></li>
+					        		<li><a href="#us_map">Northern California</a></li>
+					        		<li><a href="#us_map">Southern California</a></li>
+					        		<li><a href="#us_map">Florida</a></li>
+					        		<li><a href="#us_map">Nevada</a></li>
 					        	</ul>
 					        </div>
 					        <br class="clear" />			        
-			        	</div>
-			        	
+			        	</div>			        	
 			        	<br class="clear" />
 		
 			        	<div class="map-holder">
 			        		<div class="map_click" id="world_map">
-			        			<a href="#world_map" class="rotated loaded"><img src="images/map_sections/world-text.jpg" alt="Around the World" /></a>
+			        			<a href="#world_map" class="rotated"><img src="images/map_sections/world-text.png" alt="Around the World" /></a>
 			        		</div>
 			        		<div class="map_click" id="ny_map">	
-			        			<a href="#ny_map" class="rotated"><img src="images/map_sections/ny-text.jpg" alt="New York City Long Island" /></a>
+			        			<a href="#ny_map" class="rotated"><img src="images/map_sections/ny-text.png" alt="New York City Long Island" /></a>
 			        		</div>
 			        		<div class="map_click" id="us_map">
-			        			<a href="#us_map" class="rotated"><img src="images/map_sections/us-text.jpg" alt="United States" /></a>
-			        		</div>	
+			        			<a href="#us_map" class="rotated"><img src="images/map_sections/us-text.png" alt="United States" /></a>
+			        		</div>
 			        		<div class="map_actual" id="map_world"></div>
 			        		<div class="map_actual" id="map_ny"></div>
 			        		<div class="map_actual" id="map_us"></div>
@@ -377,7 +361,7 @@
 				        	</div><!-- end span3 -->
 				        	<div class="span3 sidebar_feature">
 				        		<img src="images/sidebar_feature_fields.jpg" alt="Career Paths" />
-				        		<br />
+				        		<div class="img_overlay"></div>
 				        		<div class="inner">
 									<h4><span>Career Paths:</span><br />Opthalmology
 									</h4>
@@ -455,8 +439,9 @@
 									<a href="#">Tour Pharmacy Student Inspires Senator Schumer's Plan to Warn Teens of Prescription Drug Abuse</a>
 								</div>	
 							</div>
-							<div class="span3 news_item">
+							<div class="span3 news_item has_image">
 								<img src="images/news_item_pic.jpg" alt="Soccer" />
+								<a href="#">Touro Student Voices On Regulation</a>
 							</div>
 							<div class="span3 news_item blue">
 								<h3>Touro in the News</h3>

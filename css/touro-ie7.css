@@ -1,0 +1,28 @@
+.scroll-overlay {
+	background: url("../images/mosaic/IE7-overlay.png") repeat center center transparent;
+}	
+
+#main_navigation > li {
+    line-height: 30px;
+}
+
+.switch-controls {
+	padding-bottom: 20px;
+}
+
+.news_item {
+	border: none;
+}
+
+.img_overlay {
+    position: static;
+    margin: -18px 0 0 20px;
+}		
+	
+.inner h3 {
+	margin-top: 20px;
+}
+
+.has_image > a {
+	z-index: 1;
+}			

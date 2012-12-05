@@ -13,22 +13,7 @@
 
   <body class="body_gateway">
 
-		<div class="navbar navbar-static-top">
-		  <div class="navbar-inner">
-		    <div class="container">
-		      <a class="brand" href="index.php">The Touro College and University System</a>
-		      <div>
-		        <ul class="nav">
-		          <li class="active"><a href="students_gateway.php">Students</a></li>
-		          <li><a href="students_gateway.php">Faculty</a></li>
-		          <li><a href="students_gateway.php">Staff</a></li>
-		          <li><a href="students_gateway.php">Alumni</a></li>
-		          <li class="last"><a href="students_gateway.php">Giving</a></li>
-		        </ul>
-		      </div><!--/.nav-collapse -->
-		    </div>
-		  </div>
-		</div>
+	  <?php include('includes/top-navigation.php'); ?>
 	  
 	  <div class="container">
 	  	<?php include('includes/search-inside-pages.php'); ?>
@@ -45,7 +30,53 @@
 	  
 	<!-- scroll area -->
 	<div class="scroll_bar">
-	  	<?php include('includes/scroll-inside-pages.php'); ?>
+		<div id="makeMeScrollable">
+			<div class="col">
+				<div class="showInfo">
+					<img src="images/inside.jpg" />
+					<div class="scroll-overlay-text">
+						<p>"My orthopedic surgeon told me, if you really want to <a href="#">help people</a>, go into physical therapy."</p>
+					</div>	
+					<div class="scroll-overlay"></div>
+				</div>
+			</div>
+			<div class="col">	
+				<div class="showInfo">
+					<img src="images/inside-02.jpg" />
+					<div class="scroll-overlay"></div>
+				</div>
+			</div>
+			<div class="col">	
+				<div class="showInfo">
+					<img src="images/inside-03.jpg" />
+					<div class="scroll-overlay-text">
+						<p>"My orthopedic surgeon told me, if you really want to <a href="#">help people</a>, go into physical therapy."</p>
+					</div>	
+					<div class="scroll-overlay"></div>
+				</div>
+			</div>
+			<div class="col">	
+				<div class="showInfo">
+					<img src="images/inside-04.jpg" />
+					<div class="scroll-overlay"></div>
+				</div>
+			</div>
+			<div class="col">	
+				<div class="showInfo">
+					<img src="images/inside.jpg" />
+					<div class="scroll-overlay-text">
+						<p>"My orthopedic surgeon told me, if you really want to <a href="#">help people</a>, go into physical therapy."</p>
+					</div>	
+					<div class="scroll-overlay"></div>
+				</div>
+			</div>
+			<div class="col">	
+				<div class="showInfo">
+					<img src="images/inside-02.jpg" />
+					<div class="scroll-overlay"></div>
+				</div>
+			</div>
+		</div>
 	</div>	  
 
     <div class="container" id="main_content">
@@ -68,56 +99,63 @@
 							<p>"This should help clarify where a student should be looking for information in case this page doesn’t include a link to content they seek. Make sure to address prospective students here as well — letting them know where to go for admission information."</p>
 						</div>	
 					</div>
-					<div class="span3 news_item first">
-						<h3>Schools &amp; Colleges</h3>
-						<p class="date">Nearest to your location:</p>
-						<ul>
-							<li><a href="#">Lander College for Men</a></li>
-							<li><a href="#">Lander College for Women</a></li>
-							<li><a href="#">Lander College of Arts and Sciences</a></li>
-							<li><a href="#">New York School of Career and Applied Studies (NYSCAS)</a></li>
-						</ul>	
-						<a href="#">Show all...</a>	
-					</div>						
-					<div class="span3 news_item first">
-						<h3>Academics</h3>
-						<ul>
-							<li><a href="#">Undergraduate</a></li>
-							<li><a href="#">Graduate</a></li>
-							<li><a href="#">Health Sciences</a></li>
-							<li><a href="#">International Programs</a></li>
-							<li><a href="#">Online Programs</a></li>
-							<li><a href="#">Special Programs</a></li>
-							<li><a href="#">Assessment and Evaluation</a></li>
-							<li><a href="#">College Bulletins</a></li>
-							<li><a href="#">Department Web Sites</a></li>
-						</ul>	
-					</div>	
-					<div class="span3 news_item first">
-						<h3>Student Services</h3>
-						<ul>
-							<li><a href="#">Academic Calendars</a></li>
-							<li><a href="#">Advisement & Counseling</a></li>
-							<li><a href="#">Commencement</a></li>
-							<li><a href="#">Computer Labs</a></li>
-							<li><a href="#">Learning Resource Centers</a></li>
-							<li><a href="#">Student Organizations</a></li>
-							<li><a href="#">Teacher Certification</a></li>
-							<li><a href="#">Office of the Registrar</a></li>
-							<li><a href="#">Office of the Bursar</a></li>
-							<li><a href="#">TCWeb - Web-based Student Services</a></li>
-							<li><a href="#">Transcript Requests</a></li>
-							<li><a href="#">Voter Registration</a></li>
-						</ul>	
-					</div>					
-					<div class="span3 news_item first">
-						<h3>Admissions: Apply to Touro</h3>
-						<ul>
-							<li><a href="#">Admissions/prospective student links of interest</a></li>
-							<li><a href="#">Other links as needed</a></li>
-							<li><a href="#">More links</a></li>
-						</ul>	
-					</div>							
+					<div class="span6">
+						<div class="row">
+					
+							<div class="span3 news_item first">
+								<h3>Schools &amp; Colleges</h3>
+								<p class="date">Nearest to your location:</p>
+								<ul>
+									<li><a href="#">Lander College for Men</a></li>
+									<li><a href="#">Lander College for Women</a></li>
+									<li><a href="#">Lander College of Arts and Sciences</a></li>
+									<li><a href="#">New York School of Career and Applied Studies (NYSCAS)</a></li>
+								</ul>	
+								<a href="schools-and-colleges.php">Show all...</a>	
+							</div>						
+							<div class="span3 news_item first">
+								<h3>Academics</h3>
+								<ul>
+									<li><a href="#">Undergraduate</a></li>
+									<li><a href="#">Graduate</a></li>
+									<li><a href="#">Health Sciences</a></li>
+									<li><a href="#">International Programs</a></li>
+									<li><a href="#">Online Programs</a></li>
+									<li><a href="#">Special Programs</a></li>
+									<li><a href="#">Assessment and Evaluation</a></li>
+									<li><a href="#">College Bulletins</a></li>
+									<li><a href="#">Department Web Sites</a></li>
+								</ul>	
+							</div>	
+							<br class="clear" />
+							<div class="span3 news_item first">
+								<h3>Student Services</h3>
+								<ul>
+									<li><a href="#">Academic Calendars</a></li>
+									<li><a href="#">Advisement & Counseling</a></li>
+									<li><a href="#">Commencement</a></li>
+									<li><a href="#">Computer Labs</a></li>
+									<li><a href="#">Learning Resource Centers</a></li>
+									<li><a href="#">Student Organizations</a></li>
+									<li><a href="#">Teacher Certification</a></li>
+									<li><a href="#">Office of the Registrar</a></li>
+									<li><a href="#">Office of the Bursar</a></li>
+									<li><a href="#">TCWeb - Web-based Student Services</a></li>
+									<li><a href="#">Transcript Requests</a></li>
+									<li><a href="#">Voter Registration</a></li>
+								</ul>	
+							</div>					
+							<div class="span3 news_item first">
+								<h3>Admissions: Apply to Touro</h3>
+								<ul>
+									<li><a href="#">Admissions/prospective student links of interest</a></li>
+									<li><a href="#">Other links as needed</a></li>
+									<li><a href="#">More links</a></li>
+								</ul>	
+							</div>
+							
+						</div>	
+					</div>									
 				</div>
 			</div>
 			<div class="span3">

@@ -92,8 +92,9 @@
 							<a href="#">Tour Pharmacy Student Inspires Senator Schumer's Plan to Warn Teens of Prescription Drug Abuse</a>
 						</div>	
 					</div>
-					<div class="span3 news_item">
+					<div class="span3 news_item has_image">
 						<img src="images/news_item_pic.jpg" alt="Soccer" />
+						<a href="#">Touro Student Voices On Regulation</a>
 					</div>
 					<div class="span3 news_item blue">
 						<h3>Touro in the News</h3>
