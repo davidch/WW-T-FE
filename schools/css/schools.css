@@ -8,6 +8,7 @@ $gateway_nav
 $school_nav
 $scroll_bar
 $schools_basic
+$schools_events
 $doors
 
 */
@@ -22,9 +23,28 @@ html, body {
 	float: right;
 }
 
+.bigger {
+	font-size: 18px;
+}
+
+.inner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 0 20px 20px;
+    position: relative;
+    z-index: 3;
+}
 
 
 /* $top_navigation */
+
+
+.navbar-inner {
+  border: none;
+}
+
+.navbar .brand {
+    padding: 0.5em 1em 0.5em 0;
+}
 
 .schools .brand {
     margin-top: 4px;
@@ -179,8 +199,57 @@ html, body {
 	    width: 172px;
 	}
 	
-.schools #makeMeScrollable, .doors {
+.schools #makeMeScrollable, .doors, .inside_landing #makeMeScrollable {
 	height: 311px;
+}
+
+.static a.arrow {
+	color: #fff;
+    font-size: 16px;
+    position: static;
+    text-transform: none;
+}
+
+.static .scroll-overlay-text {
+    bottom: 0;
+    display: block;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.inner-label {
+    color: #D0EAFB;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0 0 10px;
+}
+
+.inner-overlay {
+    background: none repeat scroll 0 0 #222;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+    float: right;
+    margin: 24px;
+    padding: 10px 20px;
+    position: relative;
+    width: 300px;
+}
+
+.inner-overlay h2 {
+    color: #FFFFFF;
+    font-family: 'georgia pro','georgia',serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+	
+.inner-overlay > p {
+	color: #fff;
+    font-size: 13px;
 }
 
 , .doors img
@@ -205,6 +274,10 @@ html, body {
 
 .schools .scroll-overlay {
     height: 290px;
+}
+
+.schools .show3 .scroll-overlay {
+    height: 140px;
 }
 
 .doors img
@@ -240,6 +313,7 @@ html, body {
 
 /* $schools_basic */
 
+
 .schools #main_content {
     margin-bottom: 40px;
 }
@@ -254,6 +328,48 @@ html, body {
 	    color: #F9EB94;
 	    text-decoration: underline;
 	}	
+	
+	
+.sidebar_feature:after {
+    right: 8px;
+    z-index: 0;   
+}
+
+.sidebar_feature:before {
+    left: 8px;
+    z-index: 0;  
+}
+
+.sidebar_feature.no_shadow:after {
+	z-index: -1;
+}
+
+	.img_overlay {
+	    background: url("/buildout/images/sidebar_triangle.png") no-repeat scroll center center transparent;
+	}
+	
+		.sidebar_feature h3 span {
+		    font-size: inherit;
+		}
+	    		
+	.sidebar_feature.post-it .inner {
+	    background-color: #FDF7D9;
+	    padding: 20px;
+	    position: relative;
+	    z-index: 3;
+	}
+	
+	.sidebar_feature.post-it .inner h3 {
+		margin-top: 0;
+	}
+	
+	.feature_image > img {
+		z-index: 4;
+	}
+	
+	.feature_image .img_overlay {
+	    background: url("/buildout/images/sidebar_right_triangle.png") no-repeat scroll center center transparent;
+	}    			
 	
 .schools_news {
     border-bottom: 1px solid #CCCCCC;
@@ -289,9 +405,52 @@ html, body {
 					font-weight: 600;
 				}
 				
-.schools_events > a {
-    font-size: 14px;
-    font-weight: 600;
+.news_item.mini_profile {
+	border-left: none;
+}	
+
+	.mini_profile img {
+		display: block;
+		max-width: 95%;
+		margin: 0px 0 6px 0;
+	}
+
+	.news_item h3, .inside_page .news_item h3 {
+	    margin: 0 0 0.75em;
+	}
+	
+	.news_item .inner {
+		background: transparent;
+	}		
+
+		.news_item a {
+			color: #06335a;		
+		}
+		
+		.news_item.green a {
+			color: #0E5E2B;
+		}
+		
+	
+		.news_item.green h3 {
+		    background-color: #0E5E2B;
+		}			
+
+		.mini_profile a {
+			color: #991A22;
+		}
+				
+		.mini_profile.blue a {
+			color: #06335a;
+		}
+		
+	.news_item a.bigger {
+	    font-size: 18px;
+	    font-weight: 600;
+	}	
+	
+.inside_navigation .news_item .inner li {
+    border: medium none;
 }						
 		
 .news_feature {
@@ -340,6 +499,88 @@ html, body {
     font-size: 13px;
     padding: 38px 10px 0;
 }
+
+	.has_image > a {
+	    background: url("/buildout/images/mosaic/IE7-overlay.png") repeat center center transparent;
+	}  
+	
+/* $schools_events	*/	
+	
+	
+.event_dtl {
+    margin: 0 0 20px;
+}
+
+.event_icon {
+	background: url(/buildout/images/inside_pages/event-cal-icon.png) no-repeat center center;
+	float: left;
+    height: 59px;
+    margin: 0 20px 0 0;
+    text-align: center;
+    width: 52px;
+}
+
+.event_icon .icon_month {
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    height: 23px;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+.event_icon .icon_day {
+    color: #000;
+    display: block;
+    font-size: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.event_dtl > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.event_dtl ul li {
+    margin: 0;
+}
+
+.event_dtl ul li span {
+	color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.event_dtl ul li span span {
+	 color: #4f5a55;
+	 font-size: 14px;
+	 font-weight: 200;
+	 margin-right: 4px;
+ }
+
+.event_dtl h3 {
+    color: #242833;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+}
+
+.event_dtl p {
+    font-size: 13px;
+    margin-left: 71px;
+}					
+				
+.schools_events > a {
+    font-size: 14px;
+    font-weight: 600;
+}	 
+	    
 
 /* $events_box */
 
@@ -490,6 +731,11 @@ html, body {
     border-right: 1px solid #CCCCCC;
     padding: 0 20px 0 0;	
 }
+
+#quick_search input {
+    border: 1px solid #CDD6DE;
+}    
+    
 
 /* $footer */	
 
@@ -783,14 +1029,17 @@ footer .share .sharelinks li,
 		    width: 90%;
 		}
 		
-.lcm .mini_map span.mini_map_arrow {
-    left: 105px;
-    top: 30%;
-}			
 		
 .mini_map img {
     border: 1px solid #dedad1;
-}		
+}	
+
+	
+	.lcw .news_item h3 {
+		background-color: #882350;
+	}
+
+	
 
 /*  $SHS  */
 
@@ -853,55 +1102,6 @@ footer .share .sharelinks li,
     background: url(../../images/schools/perma-link-orange.png) no-repeat right center;
 }
 
-.static a.arrow {
-	color: #fff;
-    font-size: 16px;
-    position: static;
-    text-transform: none;
-}
-
-.static .scroll-overlay-text {
-    bottom: 0;
-    display: block;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 0;
-    width: 100%;
-}
-
-.inner-label {
-    color: #D0EAFB;
-    display: inline-block;
-    font-size: 13px;
-    line-height: 13px;
-    margin: 0 0 10px;
-}
-
-.inner-overlay {
-    background: none repeat scroll 0 0 #222;
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
-    float: right;
-    margin: 24px;
-    padding: 10px 20px;
-    position: relative;
-    width: 300px;
-}
-
-.inner-overlay h2 {
-    color: #FFFFFF;
-    font-family: 'georgia pro','georgia',serif;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-	
-.inner-overlay > p {
-	color: #fff;
-    font-size: 13px;
-}
-
 .lcm .school_header h1	{
 	background: url(../../images/schools/LCM-hp-text.png) no-repeat left center;
 	text-indent: -9999em;
@@ -909,6 +1109,12 @@ footer .share .sharelinks li,
 
 .lcm .schools_events > a {
 	color: #db5b14;
+}
+
+		
+.lcm .mini_map span.mini_map_arrow {
+    left: 105px;
+    top: 30%;
 }
 
 /* $GSSW */

@@ -5,6 +5,9 @@
 	$Events Page
 	$Gallery Page
 	$Job Listing
+	$share_links
+	$FORM
+	$SEARCH
 */
 
 
@@ -680,3 +683,304 @@ img.profile_img {
 .lcw .block-askalibrarian h2 span {
 	color: #2B3B52;
 }
+
+
+	
+/* $share_links	*/
+
+.share {
+	padding: 20px 0 20px 30px;
+}
+
+.share > p {
+    color: #686868;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.sharelinks {
+    list-style-type: none;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.share .sharelinks li {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+/* add an outline */
+
+.inner_padding {
+    background-color: #FFFFFF;
+    border: 1px solid #CDD6DE;
+    margin: 0 -15px 30px 0;
+    overflow: hidden;
+    padding: 30px 10px 30px 5px;
+}
+
+
+/* $FORM */
+
+.form_container {
+	background: #fff;
+}
+
+.form_info h1, .form_holder h2 {
+	font-family: helvetica, arial, sans-serif;
+	font-style: normal;
+}
+
+.form_info h1 {
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.form_info ul {
+    list-style-type: none;
+    margin: 0 0 30px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.form_info li {
+    margin: 0 0 10px;
+    overflow: hidden;
+}
+
+.form_info li span span {
+    color: #06335A;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-weight: 800;
+    width: 70%;
+}
+
+.form_info li span.info_label {
+    color: grey;
+    font-weight: 200;
+    width: 30%;
+}
+
+.form_info img {
+    border: 1px solid #CDD6DE;
+	margin: 0 0 30px 0;
+}
+
+
+
+.form_holder {
+    background-color: #F6F8FA;
+    border: 1px solid #CDD6DE;
+    padding: 30px;
+}
+
+.form_set > input[type="text"] {
+    width: 80%;
+}
+
+.form_set > input[type="text"].short_text {
+	width: 30%;
+}	
+
+.form_set > input[type="radio"] {
+    float: left;
+    margin-right: 10px;
+}
+
+.form_holder label {
+    font-weight: 600;
+}
+
+.form_holder select {
+    width: 45%;
+}
+
+.form_holder .form_header {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form_holder fieldset {
+	margin-bottom: 30px;
+}
+
+.form_indent {
+    margin: 0 0 0 23px;
+}
+
+/* Search */
+
+.search_page .full_header {
+	margin-bottom: 15px;
+}
+
+	.search_page .full_header h3 {
+	    color: #303030;
+	    font-size: 19px;
+	    font-weight: 400;
+	}
+		
+	.search_page .full_header h3 a {
+	    font-size: 19px;
+	    font-weight: 600;
+	}	
+
+.search_page .news_item {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #CDD6DE;
+    border-image: none;
+    border-style: none none solid;
+    border-width: medium medium 1px;
+    margin: 10px 0 0;
+    min-height: 10px;
+    padding: 0 0 10px;
+}
+
+.search_page .news_item .inner {
+    padding: 0 0 0 10px;
+}
+
+.search_page .inner > ul {
+    list-style-type: disc;
+    margin: 0 0 0 15px;
+    padding: 0;
+}
+
+.search_page .inner li {
+    border: medium none;
+    margin: 0 0 0.25em;
+}
+
+.search_page .inner span {
+    display: inline-block;
+    font-size: 13px;
+    width: 100%;
+}
+
+.search_page .inner li a {
+    display: inline;
+    font-size: 14px;
+    padding: 0;
+}
+
+.searchbar > span {
+	margin-left: 20px;
+}	
+
+.searchbar span, .searchbar span a {
+    font-size: 11px;
+}
+
+.sortby {
+    float: right;
+	font-weight: 600;    
+    margin-right: 60px;
+}
+
+.searchbar .sortby a {
+	color: #00529b;
+}
+
+.search_results {
+    list-style-type: none;
+    margin: 5px 0 0 15px;
+}
+
+.search_results.inset {
+	margin: 20px 0 0 60px;
+}
+
+
+.search_page .main .search_results li {
+	margin-bottom: 20px;
+}
+
+.search_page .search_results, .search_page .search_results a {
+    color: #696666;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.search_page .search_results li a:first-child {
+    color: #00529B;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.search_page .search_results p {
+	color: #333333;
+    font-size: 13px;
+    margin: 0;
+}
+
+.search_page .search_results a.cached_link {
+	text-decoration: underline;
+}
+
+
+.search_page .pagination {
+	font-weight: 600;
+    margin: 60px 0 0 20px;
+}
+
+.pagination ul {
+    border-radius: 0 0 0 0;
+    box-shadow: none;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+    background-color: transparent;
+    border: 0 solid transparent;
+    color: #00529B;
+    float: left;
+    line-height: 12px;
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+.pagination ul > li > span {
+    color: #333333;
+    font-weight: 200;
+    line-height: 10px;
+}
+
+.search_page .full_header label {
+    font-size: 11px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.search_page form a {
+    color: #00529B;
+    display: block;
+    font-size: 11px;
+    font-weight: 400;
+    height: 11px;
+    line-height: 11px;
+    margin: 0 0 -15px;
+    padding: 0;
+}	
+
+input.search {
+    float: left;
+}
+
+.advanced_options {
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+
