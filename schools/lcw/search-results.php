@@ -18,13 +18,13 @@
 	
 		<?php include('../includes/top-navigation.php'); ?>
 		  
-		<?php include('../includes/lcw-school-header.php'); ?>
+		<?php include('lcw-school-header.php'); ?>
 
 		
 		<?php include('../inside-pages/search-results.php'); ?>
 		
 		<footer class="clear">
-			<?php include('../../../buildout/schools/includes/lcw-footer.php'); ?>
+			<?php include('lcw-footer.php'); ?>
 		</footer>
 	
 	

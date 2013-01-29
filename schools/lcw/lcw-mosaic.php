@@ -7,8 +7,9 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		
-		<?php include('../../includes/head.php'); ?>
-		<link type="text/css" href="../css/schools.css" rel="stylesheet"/>
+		<?php include('../includes/head.php'); ?>
+		<link type="text/css" href="/buildout/schools/css/schools.css" rel="stylesheet"/>
+		
 	
 	</head>
 	
@@ -16,7 +17,7 @@
 	
 		<?php include('../includes/top-navigation.php'); ?>
 		  
-		<?php include('../includes/lcw-school-header.php'); ?>
+		<?php include('lcw-school-header.php'); ?>
 		
 		<!-- scroll area -->
 		<div class="scroll_bar">
@@ -108,7 +109,7 @@
 		</div> <!-- /container -->
 		
 		<footer class="clear">
-			<?php include('../includes/lcw-footer.php'); ?>
+			<?php include('lcw-footer.php'); ?>
 		</footer>
 	
 	

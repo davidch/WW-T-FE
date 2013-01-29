@@ -19,7 +19,7 @@ html, body {
 	min-height: 100%;
 }
 
-.right {
+.right[class*="span"], .right {
 	float: right;
 }
 
@@ -192,6 +192,7 @@ html, body {
 
 .schools .scroll_bar {
     box-shadow: -2px 1px 9px -1px rgba(0, 0, 0, 0.5);
+    position: relative;
     z-index: 3;
 }
 
