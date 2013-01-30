@@ -7,8 +7,8 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		
-		<?php include('../includes/head.php'); ?>
 		<link type="text/css" href="/buildout/schools/css/schools.css" rel="stylesheet"/>
+		<?php include('../includes/head.php'); ?>
 		
 	
 	</head>
