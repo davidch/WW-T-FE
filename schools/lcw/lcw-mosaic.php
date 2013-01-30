@@ -23,7 +23,7 @@
 		<div class="scroll_bar">
 		
 			<div id="makeMeScrollable">
-				<div class="col">
+				<div class="col" style="width: 475px">
 					<div class="showInfo">
 						<img src="../../images/lcw-mosaic/lcw-1.jpg" width="475" />
 						<div class="scroll-overlay-text">
@@ -32,7 +32,7 @@
 						<div class="scroll-overlay"></div>
 					</div>
 				</div>
-				<div class="col show3">
+				<div class="col show3" style="width: 172px">
 					<div class="showInfo">
 						<img src="../../images/lcw-mosaic/lcw-3.jpg" width="172" />
 						<div class="scroll-overlay"></div>
@@ -42,7 +42,7 @@
 						<div class="scroll-overlay"></div>						
 					</div>													
 				</div>				
-				<div class="col">
+				<div class="col" style="width: 350px">
 					<div class="showInfo">
 						<img src="../../images/lcw-mosaic/lcw-2.jpg" width="350" />
 						<div class="scroll-overlay"></div>

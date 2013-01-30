@@ -24,21 +24,33 @@ body {
 	margin: 28px 12px 40px; padding: 0;
 }
 	
-  .container,
+	.container,
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 100%;
+    width: 94%;
   }
 
   .span12 {
   	width: 100%;
   }
   
+
+.news_feature {
+	float: none;
+    margin-bottom: 30px;
+}  
+  
 .schools .school_nav a {
     font-size: 14px;
     margin: 0 9px 0 11px;
 } 
+
+.schools2 .school_nav a, .schools2 .school_nav .horizontal_nav li:first-child a, .schools2 .school_nav .horizontal_nav li.last a {
+	font-size: 13px;
+	margin: 0;
+	padding: 0 7px;
+}	
 
 	.has_image > img {
 	    width: 80%;
@@ -55,6 +67,30 @@ body {
 	    background-size: 90% auto;
 	    text-indent: -9999em;
 	}
+	
+.schools_events > .event_tab {
+	font-size: 12px;
+    padding: 10px 2px 6px;
+}	
+
+.men_events .event_tab {
+    margin-left: 82px;
+}
+
+.women_events .event_tab {
+    margin-left: 164px;
+}
+
+footer {
+	max-width: 979px;
+	overflow: hidden;
+}
+
+footer .container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 90%;
+}
 
 }
 
@@ -63,7 +99,7 @@ body {
 body {
 	padding: 0;
 	}
-
+	
 .container {
     padding: 0 40px;
 }
@@ -579,10 +615,6 @@ footer .bg-color {
     width: 90%;
 }
 
-.news_feature {
-	float: none;
-    margin-bottom: 30px;
-}
 
 .mini_map {
     height: 275px;

@@ -253,7 +253,7 @@ html, body {
     font-size: 13px;
 }
 
-, .doors img
+.doors img
 {
 	display: block;
 	position: relative;
@@ -280,6 +280,17 @@ html, body {
 .schools .show3 .scroll-overlay {
     height: 140px;
 }
+
+.endcap .scroll-overlay-text a {
+	position: relative;
+    z-index: 99999;
+}
+
+div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
+	height: 70% !important;
+	top: 15%;
+}		
+	
 
 .doors img
 {
@@ -324,12 +335,6 @@ html, body {
     font-family: 'georgia pro','georgia',serif;
     margin: 0 0 35px;
 }	
-
-	.schools2 .intro a {
-	    color: #F9EB94;
-	    text-decoration: underline;
-	}	
-	
 	
 .sidebar_feature:after {
     right: 8px;
@@ -966,7 +971,39 @@ footer .share .sharelinks li,
 	background-color: #654382;
 }
 
-		
+
+.x-large-profile {
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.x-large-profile .profile-blurb {
+	background: none repeat scroll 0 0 rgb(30, 60, 105);
+    background: none repeat scroll 0 0 rgba(30, 60, 105, 0.8);
+    bottom: 0;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 10px 20px 0;
+    position: absolute;
+}
+
+.x-large-profile .profile-blurb > h3 {
+    color: #FFFFFF;
+    font-family: "adobe caslon pro","georgia",serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 100;
+    margin: 0 0 10px;
+}
+
+.x-large-profile .profile-blurb > h3 b {
+	color: #ffe270;
+}	
+
+.news_links {
+    padding: 0 20px;
+}
+	
 		
 /* $LCW */
 
@@ -1131,6 +1168,12 @@ body.lcas {
     height: 100%;
 }
 
+
+	.lcas .intro a {
+	    color: #F9EB94;
+	    text-decoration: underline;
+	}	
+
 .lcas .school_header {
     background-color: #F1F0EA;
 }
@@ -1145,6 +1188,22 @@ body.lcas {
 
 /* Touro COM */
 
+	.touro-com {
+		background-color: #FEFEFD;
+	}
+
+	.touro-com .intro {
+		font-family: "helvetica", arial, sans-serif;
+		font-weight: 200;
+	}
+	
+	.touro-com .intro b {
+		font-weight: 600;
+	}
+
+	.touro-com .intro a {
+		text-decoration: underline;
+	}
 
 	.touro-com .school_header, .school_nav {
 		background-color: #1967a2;
@@ -1154,6 +1213,10 @@ body.lcas {
 		background-image: -webkit-linear-gradient(left , rgb(25,47,77) 15%, rgb(36,68,99) 58%, rgb(23,44,73) 93%);
 		background-image: -ms-linear-gradient(left , rgb(25,47,77) 15%, rgb(36,68,99) 58%, rgb(23,44,73) 93%);
 	}
+	
+		.touro-com .school_header .bg-image {
+	    	background: url("../../images/schools/touro-com-header-bg.png") no-repeat scroll right center transparent;
+		}
 	
 	.touro-com .school_header h1, .touro-com .school_header h1 span {
 	    color: #FFFFFF;
@@ -1166,7 +1229,10 @@ body.lcas {
 	}
 	
 	.touro-com .school_header h1 {
-	    margin: 48px 0 0;
+	    background: url("../../images/schools/touro-com-logo.png") no-repeat scroll left center transparent;
+	    height: 104px;
+	    margin: 13px 0 0;    
+	    text-indent: -9999em;
 	}
 	
 	.touro-com .school_header h1 span {
@@ -1178,7 +1244,64 @@ body.lcas {
 	    letter-spacing: -19px;
 	    margin-right: 19px;
 	}	
-	
+
+
+.touro-com .event_icon {
+    background: url("/buildout/images/inside_pages/event-cal-icon-green.png") no-repeat scroll center center transparent;
+    float: right;
+    margin: 0 10px 0 20px;
+}
+
+.touro-com .event_dtl {
+    border-bottom: 1px solid #DCE8EF;
+    margin: 0 0 20px;
+}
+
+.touro-com .event_dtl p {
+	margin-left: 0;
+    margin-right: 60px;
+}
+
+.touro-com .event_dtl h3 {
+    font-size: 16px;
+}
+
+h2.upcoming_events {
+    background: none repeat scroll 0 0 #F7F5F3;
+    border-bottom: 1px solid #D8E3E9;
+    color: #313F3A;
+    font-family: "helvetica",arial,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    padding: 14px 0 7px 16px;
+}
+
+h2.in_the_field {
+    background: #fad664;
+    border-bottom: 1px solid #f6cb59;
+    color: #54462f;
+    font-family: "helvetica",arial,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    padding: 14px 0 7px 16px;
+}
+
+h2.upcoming_events b, h2.in_the_field b {
+	font-weight: 600;
+}
+
+.field_list li:first-child {
+    color: #E3A035;
+    margin-bottom: 8px;
+}
+
+.field_list li:first-child a {
+    color: #E3A035;
+    font-size: 20px;
+    line-height: 20px;  
+}
 	
 .touro-com .gateway_nav a {
     color: #FFE270;
