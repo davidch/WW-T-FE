@@ -4,7 +4,7 @@
     <link href="/buildout/bootstrap/css/bootstrap.css" rel="stylesheet">    
     <link href="/buildout/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/buildout/css/touro-custom.css" rel="stylesheet">
-    <link href="/buildout/css/touro-media.css" rel="stylesheet">
+    <link href="../css/schools-media.css" rel="stylesheet">
     
     <link href="http://api.tiles.mapbox.com/mapbox.js/v0.6.6/mapbox.css" rel="stylesheet" />    
 
