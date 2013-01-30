@@ -51,6 +51,10 @@ body {
 	    width: 128px;
 	}
 
+	.lcw .school_header h1 {
+	    background-size: 90% auto;
+	    text-indent: -9999em;
+	}
 
 }
 
