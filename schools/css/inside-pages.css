@@ -636,7 +636,10 @@ img.profile_img {
 }	
 
 .quick_search.full_header h4 {
+    float: left;
     font-size: 28px;
+    margin-right: 30px;
+    margin-top: 10px;
 }
 
 .featured_events > h3 {
