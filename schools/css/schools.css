@@ -480,7 +480,7 @@ div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
 }
 
 .news_feature a.arrow, a.arrow {
-    background: url(../../images/schools/perma-link-blue.png) no-repeat right center;
+    background: url(../images/schools/perma-link-blue.png) no-repeat right center;
     color: #FFFFFF;
     display: inline-block;
     font-size: 18px;
@@ -494,7 +494,7 @@ div.scrollingHotSpotLeft, div.scrollingHotSpotRight {
 }
 
 .news_feature.first a.arrow {
-    background: url(../../images/schools/perma-link-fuschia.png) no-repeat right center;
+    background: url(../images/schools/perma-link-fuschia.png) no-repeat right center;
 }   
 
 .news_feature a.line2 {
@@ -1013,7 +1013,7 @@ footer .share .sharelinks li,
 }
 	
 .lcw .school_header h1	{
-	background: url(../../images/schools/LCW-hp-text.png) no-repeat left center;
+	background: url(../images/schools/LCW-hp-text.png) no-repeat left center;
 	text-indent: -9999em;
 }
 
@@ -1044,7 +1044,7 @@ footer .share .sharelinks li,
 	}	
 	
 		.mini_map span.mini_map_arrow {
-		    background: url("../../images/schools/mini-map-arrow.png") no-repeat scroll right center transparent;
+		    background: url("../images/schools/mini-map-arrow.png") no-repeat scroll right center transparent;
 		    color: #162944;
 		    font-size: 12px;
 		    left: -10px;
@@ -1137,11 +1137,11 @@ footer .share .sharelinks li,
 /* $LCM */
 
 .lcm .news_feature.first a.arrow, .lcm .static a.arrow {
-    background: url(../../images/schools/perma-link-orange.png) no-repeat right center;
+    background: url(../images/schools/perma-link-orange.png) no-repeat right center;
 }
 
 .lcm .school_header h1	{
-	background: url(../../images/schools/LCM-hp-text.png) no-repeat left center;
+	background: url(../images/schools/LCM-hp-text.png) no-repeat left center;
 	text-indent: -9999em;
 }
 
@@ -1164,7 +1164,7 @@ footer .share .sharelinks li,
 /* $LCAS */
 
 body.lcas {
-    background: url("../../images/schools/flatbush-at-dusk.jpg") no-repeat scroll center bottom #F1F0EA;
+    background: url("../images/schools/flatbush-at-dusk.jpg") no-repeat scroll center bottom #F1F0EA;
     height: 100%;
 }
 
@@ -1215,7 +1215,7 @@ body.lcas {
 	}
 	
 		.touro-com .school_header .bg-image {
-	    	background: url("../../images/schools/touro-com-header-bg.png") no-repeat scroll right center transparent;
+	    	background: url("../images/schools/touro-com-header-bg.png") no-repeat scroll right center transparent;
 		}
 	
 	.touro-com .school_header h1, .touro-com .school_header h1 span {
@@ -1229,7 +1229,7 @@ body.lcas {
 	}
 	
 	.touro-com .school_header h1 {
-	    background: url("../../images/schools/touro-com-logo.png") no-repeat scroll left center transparent;
+	    background: url("../images/schools/touro-com-logo.png") no-repeat scroll left center transparent;
 	    height: 104px;
 	    margin: 13px 0 0;    
 	    text-indent: -9999em;

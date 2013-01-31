@@ -25,7 +25,7 @@
 			<div id="makeMeScrollable">
 				<div class="col" style="width: 475px">
 					<div class="showInfo">
-						<img src="../../images/lcw-mosaic/lcw-1.jpg" width="475" />
+						<img src="../images/lcw-mosaic/lcw-1.jpg" width="475" />
 						<div class="scroll-overlay-text">
 							<p>The LCW <a href="#">Israel Advocacy</a> Project</p>
 						</div>	
@@ -34,23 +34,23 @@
 				</div>
 				<div class="col show3" style="width: 172px">
 					<div class="showInfo">
-						<img src="../../images/lcw-mosaic/lcw-3.jpg" width="172" />
+						<img src="../images/lcw-mosaic/lcw-3.jpg" width="172" />
 						<div class="scroll-overlay"></div>
 					</div>	
 					<div class="showInfo">
-						<img src="../../images/lcw-mosaic/lcw-4.jpg" width="172" />
+						<img src="../images/lcw-mosaic/lcw-4.jpg" width="172" />
 						<div class="scroll-overlay"></div>						
 					</div>													
 				</div>				
 				<div class="col" style="width: 350px">
 					<div class="showInfo">
-						<img src="../../images/lcw-mosaic/lcw-2.jpg" width="350" />
+						<img src="../images/lcw-mosaic/lcw-2.jpg" width="350" />
 						<div class="scroll-overlay"></div>
 					</div>
 				</div>
 				<div class="col" style="width:475px">
 					<div class="showInfo">
-						<img src="../../images/lcw-mosaic/lcw-1.jpg" width="475" />
+						<img src="../images/lcw-mosaic/lcw-1.jpg" width="475" />
 						<div class="scroll-overlay-text">
 							<p>"My orthopedic surgeon told me, if you really want to <a href="#">help people</a>, go into physical therapy."</p>
 						</div>	
@@ -67,12 +67,12 @@
 			    <div class="span8">
 			    	<p class="intro">Mauris sem nisi, placerat vel varius et, varius non felis. Pulvinar, justo vel dignissim mattis, tellus Touro College. The nibh dictum nisl, will you sed tincidunt metus? Lander Schools <a href="#">felis sit</a> you.</p>
 			    	<div class="news_feature first">
-			    		<img src="../../images/schools/news-feature-1.jpg" alt="On Campus" />
+			    		<img src="../images/schools/news-feature-1.jpg" alt="On Campus" />
 			    		<a href="#" class="arrow">Perma-link</a>
 			    		<p>Ongoing dynamic or static content on a single topic (i.e. On Campus, In the Neighborhood)</p>
 			    	</div>
 			    	<div class="news_feature last">
-			    		<img src="../../images/schools/news-feature-2.jpg" alt="On Campus" />
+			    		<img src="../images/schools/news-feature-2.jpg" alt="On Campus" />
 			    		<a href="#" class="arrow">Perma-link</a>
 			    		<p>Ongoing dynamic or static content on a single topic (i.e. On Campus, In the Neighborhood)</p>
 			    	</div>
