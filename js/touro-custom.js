@@ -5,6 +5,7 @@ $(document).ready(function(){
 				
 	$('.open_sec').live('click', function(){
 		$('.section_navigation > ul').slideToggle();
+		$('.side_nav').slideToggle();
 	});			
 		
 		
@@ -13,6 +14,19 @@ $(document).ready(function(){
 		
 		$('.section_navigation > ul').hide();		
 	}	
+	
+	if(wide <= 768 && $('.inside_navigation').length >= 1 && $('body').hasClass('search_page') !== true) {
+	
+		if($('.inside_navigation h2').length >= 1) {
+			$('.inside_navigation h2').append('<a href="#open_sec" class="open_sec">View Section Navigation &raquo;</a>');
+		}
+		else {
+			$('.inside_navigation').prepend('<a href="#open_sec" class="open_sec">View Section Navigation &raquo;</a>');		
+		}
+		
+		$('.side_nav').hide();		
+	}	
+
 	
 	if(wide <= 768) {
 		mapW = '600px';
@@ -261,5 +275,49 @@ $(document).ready(function(){
 			});			
 			
 		}
+
+		
+		// dept list drop down
+		if($('.dept_list').length >= 1) {	
+		
+			$('.dept_list > span').click(function(e){
+				
+				e.preventDefault();
+												
+				$('.dept_list ul').slideToggle();
+				
+			});
+		
+		
+		}
+		
+		if($('.gal_imgs').length >= 1) {
+		
+			$('.gal_imgs .span3 ul li').click(function(e){
+				
+				e.preventDefault();
+				
+				var newIndex = parseInt($(this).attr('id').split('-')[1])-1;
+				
+				$('.hidden_images img').eq(newIndex).modal();
+				
+			});		
+		}
+		
+		
+		// school tabs
+		if($('.events_box').length >= 1) {	
+		
+			$('.event_tab').click(function(e){
+				
+				e.preventDefault();
+				$('.schools_events').removeClass('active_tab').find('.box_inner').hide();							
+				$(this).parents('.schools_events').addClass('active_tab').find('.box_inner').show();
+				
+			});
+		
+		
+		}		
+		
 		
 	});

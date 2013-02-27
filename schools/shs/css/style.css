@@ -1,0 +1,52 @@
+/*  $SHS  */
+
+.shs .school_header {
+	background-color: #63133B;
+	background-image: linear-gradient(left , #4F0F2F 6%, #63133B 28%, #63133B 75%, #4F0F2F 94%);
+	background-image: -o-linear-gradient(left , #4F0F2F 6%, #63133B 28%, #63133B 75%, #4F0F2F 94%);
+	background-image: -moz-linear-gradient(left , #4F0F2F 6%, #63133B 28%, #63133B 75%, #4F0F2F 94%);
+	background-image: -webkit-linear-gradient(left , #4F0F2F 6%, #63133B 28%, #63133B 75%, #4F0F2F 94%);
+	background-image: -ms-linear-gradient(left , #4F0F2F 6%, #63133B 28%, #63133B 75%, #4F0F2F 94%);
+}
+
+	.shs .school_header h1 {
+	    color: #FFFFFF;
+	    font-weight: 100;
+	    text-transform: none;
+	}
+	
+	.shs .school_nav {
+	    background-color: #420D28;
+	    background-image: none;
+	}
+
+		.shs .school_nav a {
+		    margin: 0 16px 0 0;
+		    text-transform: none;
+		}
+
+.shs footer .bg-color {
+	background-color: #3b0c24;	
+}
+
+.shs footer h4 {
+    float: left;
+    font-family: 'trajan pro','georgia pro',georgia,sans-serif;
+    line-height: 24px;
+    margin: 0 0 5px;
+    width: 40%;
+}
+
+.shs footer h4.tiny-logo {
+    float: right;
+    font-family: 'georgia pro',georgia,serif;
+    line-height: 17px;
+    margin: 0 0 5px;
+    text-align: right;
+    text-transform: none;
+    width: 340px;
+}
+
+.shs footer li a {
+    color: #ffe270;
+}

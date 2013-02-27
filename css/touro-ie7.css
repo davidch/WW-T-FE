@@ -2,6 +2,10 @@
 	background: url("../images/mosaic/IE7-overlay.png") repeat center center transparent;
 }	
 
+.lcw .scroll-overlay {
+	background: url("../images/lcw-mosaic/IE7-lcw-overlay.png") repeat center center transparent;
+}
+
 #main_navigation > li {
     line-height: 30px;
 }
@@ -26,3 +30,7 @@
 .has_image > a {
 	z-index: 1;
 }			
+
+.gateway_nav {
+	width: 400px;
+}

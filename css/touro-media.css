@@ -14,6 +14,20 @@
 	
 }
 
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 724px;
+  }
+  .span12 {
+    width: 724px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
 
 body {
@@ -47,6 +61,19 @@ body {
 .open_sec {
     display: block;
     font-size: 17px;
+}
+
+.inside_navigation .open_sec {
+    background-color: #2B3D54;
+    color: #fff;
+    font-weight: 200;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.inside_navigation h2 .open_sec {
+	font-weight: 100;
+	padding: 0;
 }
 			
 .section_navigation {
@@ -107,10 +134,145 @@ body {
 
 @media screen and (max-width: 480px) {
 
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 100%;
+  }
+  
+  .span12 {
+  	width: 100%;
+  }
+
 	.sidebar_feature {
 		width: 220px;
 		margin: 0 auto 30px;
 	}
+	
+.lcas .intro {
+    color: #333333;
+}
+
+.lcas .intro a {
+    color: #242833;
+    font-weight: 400;    	
+}
+
+.left_box {
+    border: medium none;
+    padding: 0 20px;
+}
+
+.recent_news {
+    padding: 20px;
+}
+
+.schools_events .event_tab {
+    font-size: 13px;
+    margin: 0 5px 0 0;
+    padding: 10px 14px;
+}
+
+.schools_events .event_tab {
+    font-size: 13px;
+    margin: 0 5px 0 0;
+    padding: 10px 9px;
+}
+
+.women_events .event_tab {
+    margin-left: 194px;
+}
+
+.men_events .event_tab {
+    margin-left: 97px;
+}
+
+.events_box {
+    margin-top: 30px;
+}
+	
+.form_indent {
+    margin: 0;
+}
+
+input, textarea, .uneditable-input {
+    width: 80%;
+}
+
+.form_info li span span {
+	font-size: 15px;
+}	
+	
+.dept_wrapper {
+    width: 90%;
+}
+
+.dept_wrapper .inside_navigation {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.inside_page .dept_wrapper .main {
+    margin: 0;
+    padding: 0;
+}
+
+.full_header {
+	height: auto;
+}
+
+.full_header > h1 {
+    margin: 0;
+    padding: 10px 0 0 20px;
+    text-indent: 0;
+}
+
+.full_header .dept_list {
+    left: 0;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    right: auto;
+    top: 10px;
+}
+
+.dept_list > ul {
+    margin: 0 0 0 -10px;
+    width: 230px;
+}
+
+.inside_navigation .side_nav {
+    background-color: #F8F8F8;
+    border: 1px solid #CDD6DE;
+    border-bottom: none;
+}			
+
+.inside_page .dept_list a {
+    font-size: 12px;
+}   
+
+.lg_img_cap {
+    width: 100%;
+} 
+
+.lg_img_cap > p {
+    padding: 5%;
+    width: 90%;
+}
+
+.search_page .full_header h3 {
+    color: #303030;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 10px 0;
+}
+
+.sortby {
+    float: none;
+}
+    
 	
 .container {
     padding: 0 20px;
@@ -123,6 +285,21 @@ body {
     width: 100%;
 }
 
+iframe {
+    height: auto;
+    width: 240px !important;
+}
+
+.mini_map iframe {
+	height: 250px !important;
+    width: 295px !important;
+}
+
+.inner_padding {
+    margin: 0 0 30px;
+    padding: 30px 15px 30px 20px;
+}
+
 .span12, [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
     -moz-box-sizing: border-box;
     clear: both;
@@ -133,9 +310,78 @@ body {
     width: 98%;
 }
 
+.inside_page .main {
+    clear: none;
+    float: none;
+    margin: 0;
+    padding: 30px 20px;
+}
 
-#main_navigation {
+.search_page .dept_hp {
+    padding: 0;
+}
+
+.search_results {
+    margin: 0;
+}
+
+.search_results.inset {
+    margin: 20px 0 0 30px;
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+	padding: 0 5px;
+}
+
+.application {
+    border-left: medium none;
+    margin: 0 0 30px;
+    padding: 0;
+}	
+
+
+.searchbar {
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.searchbar > span {
+	margin-left: 0;
+}
+
+.searchbar .sortby {
+	display: block;
+    margin-left: 0;
+}
+
+.schools .school_header h1 {
+    float: none;
+    font-size: 30px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.schools .school_header h1 span {
+    font-size: 15px;
+}
+
+.lcw .school_header h1, .lcm .school_header h1 {
+    background: transparent;
+    text-indent: 0;
+}
+
+#main_navigation, .schools .brand > img, .school_header .small-logo, .schools .gateway_nav, .schools school_nav, .school_nav .horizontal_nav, .school_nav {
 	display: none;
+}
+
+.library_nav {
+    height: 55px;
+    padding: 10px 0 0 10px;
+    position: static;
+}
+
+.library_nav > li a {
+    border: medium none;
 }
 
 footer {
@@ -175,6 +421,35 @@ footer .bg-color {
     z-index: 99;
 }
 
+.schools .footer-logo {
+	display: none;
+}
+
+.schools footer h4 {
+	float: none;
+	width: auto;
+}	
+
+.schools footer .share {
+    float: left;
+    height: 24px;
+    padding: 10px 0;
+}
+
+.shs footer h4.tiny-logo {
+    margin: 6px 0 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.schools .maps_directions li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 1px 0;
+}
+
 .main_navigation {
     font-size: 22px;
     font-weight: 400;
@@ -182,9 +457,25 @@ footer .bg-color {
     text-transform: none;
 }
 
+.schools footer .main_navigation {
+	margin-bottom: 20px;
+}
+
 	.main_navigation a {
 	    line-height: 27px;
 	}
+	
+.schools footer li {
+    margin: 0;
+    text-align:left;
+}    	
+	
+.schools footer li a {
+    color: #06335A;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 20px;
+}	
 
 .top_link a {
     color: #FFC70E;
@@ -204,6 +495,14 @@ footer .bg-color {
     text-align: left;
     width: 100%;
 }
+
+.inside_navigation {
+    margin: 0 0 20px 0;
+}
+
+#main_content {
+    margin-top: 8px;
+} 
 
 .container {
     float: none;
@@ -227,6 +526,20 @@ footer .bg-color {
 		width: 220px;
 		margin: 0 auto 30px;
 	}
+	
+.profile_sidebar {
+	margin-bottom: 20px;
+}		
+
+.event .inner_sidebar {
+    max-width: 240px;
+}
+	
+.event .inner_sidebar .map iframe {
+    height: 240px;
+    margin-bottom: 30px;
+    width: 240px !important;
+}	
 
 .feature_image .img_overlay {
 	display: none;
@@ -234,6 +547,19 @@ footer .bg-color {
 
 .feature_image .sidebar_feature {
     width: 90%;
+}
+
+.news_feature {
+	float: none;
+    margin-bottom: 30px;
+}
+
+.mini_map {
+    height: 275px;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    width: auto;
 }
 
 .news_item, .news_item.first {
@@ -248,7 +574,7 @@ footer .bg-color {
     overflow: hidden;
 }
 
-.navbar .brand {
+.navbar .brand, .schools .brand {
 	display: block;
 	float: none;
 	font-size: 15px;
@@ -257,6 +583,11 @@ footer .bg-color {
     margin: 0 auto;
     width: 100%;
 }    
+   
+.schools .brand {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}   
     
 	.navbar .nav {
 	    float: left;
@@ -284,9 +615,10 @@ footer .bg-color {
     width: 300px;
 }
 
-#quick_search > input {
-    font-size: 14px;
-    width: 240px;
+.quick_search.full_header #quick_search > input {
+    font-size: 12px;
+    padding: 10px;
+    width: 180px;
 }	
 
 #search_bar img {
@@ -301,6 +633,14 @@ footer .bg-color {
     float: none;
     margin: 10px 0 0;
     padding-bottom: 12px;
+}
+
+.schools #search_bar {
+    border: medium none;
+    float: none;
+    margin: 10px auto;
+    padding: 0;
+    width: 240px;
 }
 	
 #search, .homepage #search {
@@ -337,9 +677,56 @@ footer .bg-color {
 		display: none;
 	}
 	
+	
+.gal_des {
+    margin-right: 3%;
+    max-width: 97%;
+}	
+	
 .section_header {
     font-size: 1.65em;	
+}   
+
+.quick_search {
+    padding: 10px 0 4px;
+    height: 105px;
+    margin-top: 30px;
+}	
+
+.quick_search.full_header h4 {
+    float: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#homepage-find-outer-container {
+    height: auto;
 }    
+
+#homepage-find-outer-container .ui-tabs .ui-tabs-nav {
+    padding: 3px 12px 6px;
+}
+
+#homepage-find-outer-container .ui-state-default, #homepage-find-outer-container .ui-widget-content .ui-state-default, #homepage-find-outer-container .ui-widget-header .ui-state-default, #homepage-find-outer-container .ui-tabs .ui-tabs-nav li.ui-state-active {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+
+#homepage-find-quick .homepage-find-text-primary, #homepage-find-catalog .homepage-find-text-primary {
+    width: 190px;
+}
+
+.ask-main {
+    margin-bottom: 20px;
+}
+
+.lib_lists {
+    margin-bottom: 20px;
+}
+
+.audience {
+    margin-bottom: 20px;
+}
 	
 		.map-holder {
 		    background: #e6c963;
@@ -379,10 +766,12 @@ footer .bg-color {
 	}	
 	
 
-	.scrollMe {
-	    overflow-x: scroll;
-	    width: 100%;
-	}
+.scrollMe {
+    box-shadow: -2px 1px 9px -1px rgba(0, 0, 0, 0.5);
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: 100%;
+}
 
 
 	#makeMeScrollable {
@@ -415,5 +804,33 @@ footer .bg-color {
 	#makeMeScrollable .check {
 		float: left;
 	}
+
+.doors_scroll {
+	background-color: #fff;
+	padding-bottom: 10px;
+}
+	
+.doors_scroll .doors {
+    height: auto;
+    width: 155px;
+}
+
+.doors_scroll .doors:first-child {
+	padding-right: 10px;
+}
+
+.endcap {
+    height: auto;
+    padding: 0 !important;
+    position: static !important;
+    width: 100%;
+}	
+	
+.endcap .scroll-overlay-text > h3 {
+	font-size: 24px;
+}		
+	
+	
+	
 
 }

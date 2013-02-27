@@ -1,3 +1,18 @@
 .body_locations .section_header {
     font-size: 1.7em;
 }
+
+		.schools .school_nav a {
+			margin: 0 21px 0 0;
+		}
+		
+.schools .brand > img {
+    display: inline;
+}
+
+.navbar .brand {
+    display: block;
+    float: left;
+    height: 28px;
+    width: 400px;
+}    		
