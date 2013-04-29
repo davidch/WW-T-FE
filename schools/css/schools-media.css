@@ -1,0 +1,898 @@
+@media screen and (max-width: 1024px) {
+
+	#main_navigation > li {
+	    margin-left: 42px;
+	}
+	
+		#main_navigation li a {
+		    font-size: 1.3em;
+		}
+		
+	.container {
+	    padding: 0 20px;
+	}
+	
+}
+
+@media screen and (max-width: 979px) {
+
+body {
+	padding: 0;
+	}
+	
+.schools #main_content {
+	margin: 28px 12px 40px; padding: 0;
+}
+	
+	.container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 94%;
+  }
+
+  .span12 {
+  	width: 100%;
+  }
+  
+
+.news_feature {
+	float: none;
+    margin-bottom: 30px;
+}  
+  
+.schools .school_nav a {
+    font-size: 14px;
+    margin: 0 9px 0 11px;
+} 
+
+.schools2 .school_nav a, .schools2 .school_nav .horizontal_nav li:first-child a, .schools2 .school_nav .horizontal_nav li.last a {
+	font-size: 13px;
+	margin: 0;
+	padding: 0 7px;
+}	
+
+	.has_image > img {
+	    width: 80%;
+	}
+
+	.has_image > a {
+	    font-size: 14px;
+	    height: 68px;
+	    left: 19px;
+	    width: 128px;
+	}
+
+	.lcw .school_header h1 {
+	    background-size: 90% auto;
+	    text-indent: -9999em;
+	}
+	
+.schools_events > .event_tab {
+	font-size: 12px;
+    padding: 10px 2px 6px;
+}	
+
+.men_events .event_tab {
+    margin-left: 82px;
+}
+
+.women_events .event_tab {
+    margin-left: 164px;
+}
+
+footer {
+	max-width: 979px;
+	overflow: hidden;
+}
+
+footer .container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 90%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+body {
+	padding: 0;
+	}
+	
+.container {
+    padding: 0 40px;
+}
+
+.body_locations .section_header {
+    font-size: 1.3em;
+}
+
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	width: auto;
+}
+
+#main_navigation li a {
+    font-size: 1.1em;
+}
+
+	#main_navigation > li {
+	    margin-left: 15px;
+	}
+	
+.section_navigation > h2 {
+    text-align: left;
+}	
+	
+.open_sec {
+    display: block;
+    font-size: 17px;
+}
+
+.inside_navigation .open_sec {
+    background-color: #2B3D54;
+    color: #fff;
+    font-weight: 200;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.inside_navigation h2 .open_sec {
+	font-weight: 100;
+	padding: 0;
+}
+			
+.section_navigation {
+    border: medium none;
+    float: none;
+    margin-bottom: 1em;
+    overflow: hidden;
+    padding-left: 0;
+    width: 100%;
+}	
+
+.section_navigation > ul {
+    background-color: #FFFFFF;
+    border: 1px solid #991A22;
+    display: block;
+    font-family: 'georgia',serif;
+    height: auto;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    width: 220px;
+}		
+	
+.section_navigation li {
+    float: none;
+    font-size: 1em;
+    margin: 0 0.5em 0.5em 0;
+    text-decoration: underline;
+    text-align: left;
+}
+		
+	
+	.section_navigation .subnav {
+		border: none;
+		background: transparent;
+	}	
+	
+		.map-holder {
+		    z-index: 1;
+		    width: 690px;
+		}  
+    
+		.map_actual {
+		    width: 600px;
+		}
+		
+		.loc_list {
+			width: 600px;
+		}
+		
+	.loc_list h3, .ny_list h3 {
+	    padding: 7px 0 6px 3%;
+	    width: 97%;
+	}	
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .container,
+  .navbar-static-top .container,
+  .navbar-fixed-top .container,
+  .navbar-fixed-bottom .container {
+    width: 100%;
+  }
+  
+  .span12 {
+  	width: 100%;
+  }
+
+	.sidebar_feature {
+		width: 220px;
+		margin: 0 auto 30px;
+	}
+	
+.lcas .intro {
+    color: #333333;
+}
+
+.lcas .intro a {
+    color: #242833;
+    font-weight: 400;    	
+}
+
+.left_box {
+    border: medium none;
+    padding: 0 20px;
+}
+
+.recent_news {
+    padding: 20px;
+}
+
+.schools_events .event_tab {
+    font-size: 13px;
+    margin: 0 5px 0 0;
+    padding: 10px 14px;
+}
+
+.schools_events .event_tab {
+    font-size: 13px;
+    margin: 0 5px 0 0;
+    padding: 10px 9px;
+}
+
+.women_events .event_tab {
+    margin-left: 194px;
+}
+
+.men_events .event_tab {
+    margin-left: 97px;
+}
+
+.events_box {
+    margin-top: 30px;
+}
+	
+.form_indent {
+    margin: 0;
+}
+
+input, textarea, .uneditable-input {
+    width: 80%;
+}
+
+.form_info li span span {
+	font-size: 15px;
+}	
+	
+.dept_wrapper {
+    width: 90%;
+}
+
+.dept_wrapper .inside_navigation {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.inside_page .dept_wrapper .main {
+    margin: 0;
+    padding: 0;
+}
+
+.full_header {
+	height: auto;
+}
+
+.full_header > h1 {
+    margin: 0;
+    padding: 10px 0 0 20px;
+    text-indent: 0;
+}
+
+.full_header .dept_list {
+    left: 0;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    right: auto;
+    top: 10px;
+}
+
+.dept_list > ul {
+    margin: 0 0 0 -10px;
+    width: 230px;
+}
+
+.inside_navigation .side_nav {
+    background-color: #F8F8F8;
+    border: 1px solid #CDD6DE;
+    border-bottom: none;
+}			
+
+.inside_page .dept_list a {
+    font-size: 12px;
+}   
+
+.lg_img_cap {
+    width: 100%;
+} 
+
+.lg_img_cap > p {
+    padding: 5%;
+    width: 90%;
+}
+
+.search_page .full_header h3 {
+    color: #303030;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0 0 20px;
+    padding: 10px 0;
+}
+
+.sortby {
+    float: none;
+}
+    
+	
+.container {
+    padding: 0 20px;
+}	
+
+body {
+    margin: 0;
+    max-width: 480px;
+    padding: 0;
+    width: 100%;
+}
+
+iframe {
+    height: auto;
+    width: 240px !important;
+}
+
+.mini_map iframe {
+	height: 250px !important;
+    width: 295px !important;
+}
+
+.inner_padding {
+    margin: 0 0 30px;
+    padding: 30px 15px 30px 20px;
+}
+
+.span12, [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] {
+    -moz-box-sizing: border-box;
+    clear: both;
+    display: block;
+    float: none;
+    margin: 0;
+    padding: 0;
+    width: 98%;
+}
+
+.inside_page .main {
+    clear: none;
+    float: none;
+    margin: 0;
+    padding: 30px 20px;
+}
+
+.search_page .dept_hp {
+    padding: 0;
+}
+
+.search_results {
+    margin: 0;
+}
+
+.search_results.inset {
+    margin: 20px 0 0 30px;
+}
+
+.pagination ul > li > a, .pagination ul > li > span {
+	padding: 0 5px;
+}
+
+.application {
+    border-left: medium none;
+    margin: 0 0 30px;
+    padding: 0;
+}	
+
+
+.searchbar {
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+
+.searchbar > span {
+	margin-left: 0;
+}
+
+.searchbar .sortby {
+	display: block;
+    margin-left: 0;
+}
+
+.schools .school_header h1 {
+    float: none;
+    font-size: 30px;
+    height: auto;
+    margin: 10px 0;
+}
+
+.schools .school_header h1 span {
+    font-size: 15px;
+}
+
+.lcw .school_header h1, .lcm .school_header h1 {
+    background: transparent;
+    text-indent: 0;
+}
+
+#main_navigation, .schools .brand > img, .school_header .small-logo, .schools .gateway_nav, .schools school_nav, .school_nav .horizontal_nav, .school_nav {
+	display: none;
+}
+
+.library_nav {
+    height: 55px;
+    padding: 10px 0 0 10px;
+    position: static;
+}
+
+.library_nav > li a {
+    border: medium none;
+}
+
+footer {
+    background-color: #dce7f1;
+}    
+
+footer p {
+    font-size: 0.65em;
+    padding-left: 10px;
+}
+
+footer .container .row {
+    background-size: 60px auto;
+}
+
+footer .bg-color {
+    padding-bottom: 35px;
+}
+
+#footer_nav {
+    border-top: 6px solid #06335A;
+    display: block;
+    margin: 20px 0 0;
+    padding: 20px 0 0;
+}
+
+#footer_nav .top_link {
+    background: none repeat scroll 0 0 #1A3961;
+    bottom: 0;
+    font-size: 13px;
+    left: 0;
+    max-width: 480px;
+    padding: 0;
+    position: fixed;
+    text-transform: none;
+    width: 100%;
+    z-index: 99;
+}
+
+.schools .footer-logo {
+	display: none;
+}
+
+.schools footer h4 {
+	float: none;
+	width: auto;
+}	
+
+.schools footer .share {
+    float: left;
+    height: 24px;
+    padding: 10px 0;
+}
+
+.shs footer h4.tiny-logo {
+    margin: 6px 0 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.schools .maps_directions li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 1px 0;
+}
+
+.main_navigation {
+    font-size: 22px;
+    font-weight: 400;
+    list-style-type: none;
+    text-transform: none;
+}
+
+.schools footer .main_navigation {
+	margin-bottom: 20px;
+}
+
+	.main_navigation a {
+	    line-height: 27px;
+	}
+	
+.schools footer li {
+    margin: 0;
+    text-align:left;
+}    	
+	
+.schools footer li a {
+    color: #06335A;
+    font-size: 22px;
+    font-weight: 400;
+    padding-left: 20px;
+}	
+
+.top_link a {
+    color: #FFC70E;
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 2px 2.5% 2px 0;
+    text-align: right;
+    white-space: nowrap;
+    width: 47.5%;
+}
+
+.skip_nav {
+    color: #FFC70E;
+    display: inline-block;
+    padding: 2px 0 2px 2.5%;
+    text-align: left;
+    width: 100%;
+}
+
+.inside_navigation {
+    margin: 0 0 20px 0;
+}
+
+#main_content {
+    margin-top: 8px;
+} 
+
+.container {
+    float: none;
+    margin: 0;
+    padding: 0 0 0 5%;
+    width: 90%;
+}	
+
+.switch-controls li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.no_shadow h3 {
+    clear: both;
+    padding-top: 20px;
+}
+
+	.sidebar_feature {
+		width: 220px;
+		margin: 0 auto 30px;
+	}
+	
+.profile_sidebar {
+	margin-bottom: 20px;
+}		
+
+.event .inner_sidebar {
+    max-width: 240px;
+}
+	
+.event .inner_sidebar .map iframe {
+    height: 240px;
+    margin-bottom: 30px;
+    width: 240px !important;
+}	
+
+.feature_image .img_overlay {
+	display: none;
+}
+
+.feature_image .sidebar_feature {
+    width: 90%;
+}
+
+
+.mini_map {
+    height: 275px;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    width: auto;
+}
+
+.news_item, .news_item.first {
+	border: none;
+	padding: 0;
+}	
+
+.navbar, .navbar a {
+    font-size: 14px;
+    margin: 0 0 8px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar .brand, .schools .brand {
+	display: block;
+	float: none;
+	font-size: 15px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+}    
+   
+.schools .brand {
+    margin-top: 0 !important;
+    padding: 0 !important;
+}   
+    
+	.navbar .nav {
+	    float: left;
+	    display: none;
+	}
+	
+	.navbar-inner {
+		padding: 0;
+	}	
+	
+.navbar .nav > li > a, .navbar .nav > li > a:hover {
+    padding: 0 0.5em;
+}
+
+
+#search_bar > a {
+	float: none;
+}
+
+.quick_search {
+    margin-top: 30px;
+}	
+
+#quick_search {
+    width: 300px;
+}
+
+.quick_search.full_header #quick_search > input {
+    font-size: 12px;
+    padding: 10px;
+    width: 180px;
+}	
+
+#search_bar img {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+}
+	
+#search_bar, .homepage #search_bar {
+    border-bottom: 1px solid #C2C2BD;
+    float: none;
+    margin: 10px 0 0;
+    padding-bottom: 12px;
+}
+
+.schools #search_bar {
+    border: medium none;
+    float: none;
+    margin: 10px auto;
+    padding: 0;
+    width: 240px;
+}
+	
+#search, .homepage #search {
+    margin: 0;
+    position: static;
+    width: 100%;
+}
+
+.homepage #search .search_field, #search .search_field {
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7) inset;
+    display: block;
+    margin: 12px auto 0;
+}
+		
+	#main_navigation {
+	    margin: 14px 0 0;
+	}	
+			#main_navigation li a {
+			    font-size: 1em;
+			}
+
+.section_navigation > h2 {
+    font-size: 32px;
+    text-align: left;
+}
+	
+	.homepage #search_bar img {
+		display: block;
+		width: 85%;
+		margin: 0 auto;
+	}
+	
+	.homepage #main_content {
+		display: none;
+	}
+	
+	
+.gal_des {
+    margin-right: 3%;
+    max-width: 97%;
+}	
+	
+.section_header {
+    font-size: 1.65em;	
+}   
+
+.quick_search {
+    padding: 10px 0 4px;
+    height: 105px;
+    margin-top: 30px;
+}	
+
+.quick_search.full_header h4 {
+    float: none;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#homepage-find-outer-container {
+    height: auto;
+}    
+
+#homepage-find-outer-container .ui-tabs .ui-tabs-nav {
+    padding: 3px 12px 6px;
+}
+
+#homepage-find-outer-container .ui-state-default, #homepage-find-outer-container .ui-widget-content .ui-state-default, #homepage-find-outer-container .ui-widget-header .ui-state-default, #homepage-find-outer-container .ui-tabs .ui-tabs-nav li.ui-state-active {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+}
+
+#homepage-find-quick .homepage-find-text-primary, #homepage-find-catalog .homepage-find-text-primary {
+    width: 190px;
+}
+
+.ask-main {
+    margin-bottom: 20px;
+}
+
+.lib_lists {
+    margin-bottom: 20px;
+}
+
+.audience {
+    margin-bottom: 20px;
+}
+	
+		.map-holder {
+		    background: #e6c963;
+		    height: 300px;
+		    left: 0;
+		    position: relative;
+		    top: -20px;
+		    width: 300px;
+		    z-index: 1;
+		}  
+    
+		.map_actual {
+		    bottom: 0;
+		    height: 300px;
+		    left: 0 !important;
+		    position: absolute;
+		    top: 0;
+		    overflow: hidden;
+		    width: 300px;
+		}
+		
+		.loc_list {
+			width: 300px;
+		}
+		
+	.loc_list h3, .ny_list h3 {
+	    padding: 7px 0 6px 3%;
+	    width: 97%;
+	}	
+	
+	.loc_list ul {
+	    display: none;
+	}		
+
+	.map_click {
+		display: none;
+	}	
+	
+
+.scrollMe {
+    box-shadow: -2px 1px 9px -1px rgba(0, 0, 0, 0.5);
+    overflow-x: scroll;
+    overflow-y: visible;
+    width: 100%;
+}
+
+
+	#makeMeScrollable {
+		height: 155px;
+	}
+	
+.homepage #makeMeScrollable {
+    height: 455px;
+}			
+	
+.inside_landing #makeMeScrollable {
+    height: 310px;
+}
+	
+	#makeMeScrollable .col {
+		display: block;
+	    float: none;
+	    margin-right: 10px;
+	    overflow: hidden;
+	}
+	
+	#makeMeScrollable img {
+	    display: block;
+	    float: none;
+	    min-width: 190px;
+	    position: static;
+	    width: auto;
+	}	
+	
+	#makeMeScrollable .check {
+		float: left;
+	}
+
+.doors_scroll {
+	background-color: #fff;
+	padding-bottom: 10px;
+}
+	
+.doors_scroll .doors {
+    height: auto;
+    width: 155px;
+}
+
+.doors_scroll .doors:first-child {
+	padding-right: 10px;
+}
+
+.endcap {
+    height: auto;
+    padding: 0 !important;
+    position: static !important;
+    width: 100%;
+}	
+	
+.endcap .scroll-overlay-text > h3 {
+	font-size: 24px;
+}		
+	
+	
+	
+
+}

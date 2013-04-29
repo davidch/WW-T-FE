@@ -1,4 +1,5 @@
 <div id="search_bar">
+<<<<<<< HEAD
 	<a href="index.php"><img src="images/WeAreTouro.png" alt="We Are Touro" /></a>
 	
 	
@@ -33,6 +34,5 @@
       </div>
 
 
-	
-	
+
 </div>	

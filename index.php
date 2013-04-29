@@ -35,6 +35,7 @@
 	  <?php include('includes/top-navigation.php'); ?>
 	  <div class="container">
 	  	<div id="search_bar">
+<<<<<<< HEAD
 			<a href="/buildout"><img src="images/WeAreTouro-homepage.png" alt="We Are Touro" /></a>
 			
 			
@@ -69,6 +70,7 @@
 
 			
 			
+
 		</div>
 	  </div>	
 	  
@@ -516,7 +518,6 @@
 
 	<footer class="clear">
 	    <?php include('includes/footer.php'); ?>
-
 	</footer>
 	
 	

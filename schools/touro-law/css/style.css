@@ -1,0 +1,90 @@
+body {
+  background-color: #0055a1;
+}
+.gateway_nav {
+  margin-top: 12px;
+}
+.gateway_nav a {
+  color: #fff;
+  border-right: 2px solid #7693a9;
+}
+p,
+p.intro {
+  color: #fff;
+}
+header {
+  height: 170px;
+  background: #0055a1;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(left, #0055a1 0%, #0055a1 47%, #9eb6e3 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #0055a1), color-stop(47%, #0055a1), color-stop(100%, #9eb6e3));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(left, #0055a1 0%, #0055a1 47%, #9eb6e3 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(left, #0055a1 0%, #0055a1 47%, #9eb6e3 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(left, #0055a1 0%, #0055a1 47%, #9eb6e3 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to right, #0055a1 0%, #0055a1 47%, #9eb6e3 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#0055a1', endColorstr='#9eb6e3', GradientType=1);
+  /* IE6-9 */
+
+}
+.school_header h1 {
+  margin: 52px 0 0 -38px;
+  height: 0;
+  width: 449px;
+  height: 118px;
+  background: url(../images/logo.png) top left no-repeat;
+  text-indent: -9999em;
+}
+.school_nav {
+  background: #182c49;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(left, #172a46 0%, #13233a 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #172a46), color-stop(100%, #13233a));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(left, #172a46 0%, #13233a 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(left, #172a46 0%, #13233a 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(left, #172a46 0%, #13233a 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to right, #172a46 0%, #13233a 100%);
+  /* W3C */
+
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#172a46', endColorstr='#13233a', GradientType=1);
+  /* IE6-9 */
+
+}
+.school_nav li a {
+  font-size: 14px;
+}
+.touro-law #main_content {
+  margin-bottom: 0;
+}
+#content_wrapper {
+  background-image: url(../images/footer.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  min-height: 920px;
+}
+.schools_news h3 {
+  color: #b9e5f6;
+}

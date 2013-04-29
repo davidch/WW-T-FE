@@ -1,0 +1,20 @@
+/* $LCM */
+
+.lcm .news_feature.first a.arrow, .lcm .static a.arrow {
+    background: url(/images/schools/perma-link-orange.png) no-repeat right center;
+}
+
+.lcm .school_header h1	{
+	background: url(/images/schools/LCM-hp-text.png) no-repeat left center;
+	text-indent: -9999em;
+}
+
+.lcm .schools_events > a {
+    color: #db5b14;
+}
+
+		
+.lcm .mini_map span.mini_map_arrow {
+    left: 105px;
+    top: 30%;
+}

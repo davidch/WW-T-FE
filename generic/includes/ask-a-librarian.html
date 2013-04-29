@@ -1,0 +1,85 @@
+<div class="homepage-ask-container">
+	<div id="block-askalibrarian-0" class="block block-askalibrarian">
+	
+		<div class="content">
+			<div class="ask-main">
+			
+			<h2><span>Ask a Librarian</span><span class="help-icon"></span></h2>
+			
+			<ul id="ask-choices">
+			<span class="meta" id="ask-ping-url" title="/askalibrarian/chat-status"></span>
+			<li class="first" id="ask-chat-link-container">
+			<a id="ask-chat-link" href="http://www.questionpoint.org/crs/servlet/org.oclc.home.TFSRedirect?virtcategory=10253" style="display: inline;">chat</a><span id="ask-chat-unavailable" title="" style="display: none;">chat</span></li>
+			
+			  <li><a id="ask-email-link" href="http://www.touro.edu/library/email/asklibrarian.asp">email</a></li>
+			  
+			  <li><a href="http://www.tourolib.org/about/libraries">phone</a></li>
+			<li class="last"><a href="http://www.tourolib.org/about/libraries">desk</a></li>
+			</ul>
+			
+			<div id="ask-chat" class="ask-section">
+			<form id="ask-chat-form" class="ask-form" action="/sites/all/modules/askalibrarian/chatform.php" name="collect" method="GET">
+			
+			<div id="ask-chat-form-name-container"> 
+			  <label for="ask-chat-form-name">Your name</label> 
+			  <input class="input-text" id="ask-chat-form-name" name="chat_name" type="text" tabindex="51"> 
+			</div> 
+			
+			<input id="ask-chat-form-submit" class="ask-form-submit input-button" type="submit" value="Send" tabindex="54">
+			
+			<div id="ask-chat-error" class="ask-error"></div>
+			
+			<div id="ask-chat-form-email-container">
+			  <label for="ask-chat-form-email">Your email</label>
+			  <input class="input-text" id="ask-chat-form-email" name="chat_email" type="text" tabindex="52">
+			</div>
+			
+			<div id="ask-chat-form-message-container"> 
+			  <label for="ask-chat-form-message">Your message</label> 
+			  <textarea id="ask-chat-form-message" class="ask-form-message" name="question" tabindex="53"></textarea>
+			</div> 
+			
+			<input type="hidden" name="source" value="3">
+			<input type="hidden" name="service" value="3">
+			<input type="hidden" value="10253" name="library">
+			</form> 
+			</div>
+			
+			<div id="ask-email" class="ask-section">
+			<form id="ask-email-form" class="ask-form" action="http://www.questionpoint.org/crs/servlet/org.oclc.ask.AskPatronQuestion" method="POST">
+			
+			<div id="ask-email-form-email-container"> 
+			  <label for="ask-email-form-email">Your email</label> 
+			  <input class="input-text" id="ask-email-form-email" name="email" type="text" tabindex="51"> 
+			</div> 
+			
+			<input id="ask-email-form-submit" class="ask-form-submit input-button" type="submit" value="Send" tabindex="53"> 
+			
+			<div id="ask-email-error" class="ask-error"></div>
+			
+			<div id="ask-email-form-message-container"> 
+			  <label for="ask-email-form-message">Your message</label> 
+			  <textarea id="ask-email-form-message" class="ask-form-message" name="question" tabindex="52"></textarea> 
+			</div> 
+			
+			<input type="hidden" name="language" value="1">
+			<input type="hidden" name="library" value="10253">
+			<input type="hidden" name="source" value="3">
+			</form> 
+			</div>
+			
+			<div id="ask-chat-hours-overlay">
+			<p id="ask-chat-sorry">Sorry, no librarians are available for chat right now.</p>
+			<h3>Chat Hours</h3>
+			<dl>
+			  <dt>Monday-Thursday</dt><dd>9:30am Ð 9:30pm ET</dd>
+			  <dt>Friday</dt><dd>9:30am Ð 1:30pm ET</dd>
+			</dl>
+			</div>
+			
+			</div><!-- end .ask-main -->
+			
+			<div class="ask-filler"></div>
+		</div>
+	</div>
+</div>

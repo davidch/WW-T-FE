@@ -1,0 +1,208 @@
+<div id="homepage-find-outer-container" class="front-tabs">
+    <div class="jquery-tabs ui-tabs ui-widget ui-widget-content ui-corner-all" id="homepage-find-container" style="display: block;">
+      <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+        <li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active">
+          <a href="#homepage-find-quick" title="QuickSearch">QuickSearch</a>
+        </li>
+        <li class="ui-state-default ui-corner-top"><a href="#homepage-find-catalog" title="Catalog">Books &amp; more</a></li>
+        <li class="ui-state-default ui-corner-top"><a href="#homepage-find-databases" title="Articles and Databases">Databases</a></li>
+        <li class="ui-state-default ui-corner-top"><a href="#homepage-find-ejournals" title="eJournals">eJournals</a></li>
+        <li class="ui-state-default ui-corner-top"><a href="#homepage-find-videos" title="Videos">Videos</a></li>
+      </ul>
+
+      <div id="homepage-find-quick" class="ui-tabs-panel ui-widget-content ui-corner-bottom">
+        <span class="metadata" id="library-code-url" title="/sites/all/themes/tc1/scripts/library_code.php"></span>
+
+        <!-- For sites without QuickSearch -->
+        <div id="homepage-find-quick-no">
+        <div class="homepage-find-description">
+          QuickSearch not available at this location;
+          use <a href="https://erms.tourolib.org/database/255">Central Search</a>.
+        </div>
+        <form class="homepage-find-form grayout" action="http://touro.summon.serialssolutions.com/search">
+          <input type="text" disabled="disabled" class="homepage-find-text-primary input-text" name="s.q">
+          <input type="submit" disabled="disabled" class="input-submit" value="Search">
+          <span class="grayout homepage-advanced-search-link">Advanced search</span>
+        </form>
+        <div class="homepage-find-options-link">
+          <span class="grayout">Where's Central Search?</span>
+        </div>
+        </div>
+
+        <!-- For sites with QuickSearch -->
+        <div id="homepage-find-quick-yes">
+        <div class="homepage-find-description">
+          Search all of our resources together with
+          <strong>QuickSearch</strong>
+        </div>
+        <form class="homepage-find-form" action="http://touro.summon.serialssolutions.com/search">
+          <input type="text" class="homepage-find-text-primary input-text" name="s.q">
+          <input type="submit" class="input-submit" value="Search">
+          <a class="homepage-advanced-search-link" href="http://touro.summon.serialssolutions.com/advanced">Advanced search</a>
+        </form>
+        <div class="homepage-find-options-link">
+          <a href="/node/204">Where's Central Search?</a>
+        </div>
+        </div>
+      </div>
+
+      <div id="homepage-find-catalog" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+        <div class="homepage-find-description">
+          Search the <strong>catalog</strong> for books, journals, CDs, and DVDs
+        </div>
+        <form class="homepage-find-form" action="http://library.touro.edu/search/X">
+          <input type="text" class="homepage-find-text-primary input-text" name="SEARCH">
+          <input type="hidden" name="SORT" value="A">
+          <input type="hidden" name="searchscope" value="2">
+          <input type="submit" class="input-submit" value="Search">
+        </form>
+        <div class="homepage-find-options-link">
+          <a href="http://library.touro.edu/search~S2">Simple search</a>
+          | <a href="http://library.touro.edu/search~S2/X">Advanced search</a>
+          | <a href="http://library.touro.edu/search~S2/r">Course reserves</a>
+        </div>
+      </div>
+      <div id="homepage-find-databases" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+        <div class="homepage-find-description">
+          Search in one of our <strong><a href="https://erms.tourolib.org/">online databases</a></strong>
+        </div>
+        <form class="homepage-find-form" action="https://erms.tourolib.org">
+          <select name="subject" id="homepage-databases-form-subject">
+            <option value="">All subjects</option>            
+            <option value="multidisciplinary">
+            Multidisciplinary    </option>
+            <option value="art">
+            Art, Music, Dance, Theater    </option>
+            <option value="business">
+            Business, Management, Accounting, Economics     </option>
+            <option value="computer-science">
+            Computer Science    </option>
+            <option value="dictionaries-encyclopedias">
+            Dictionaries &amp; Encyclopedias     </option>
+            <option value="education">
+            Education     </option>
+            <option value="health-sciences">
+            Health Sciences    </option>
+            <option value="history">
+            History     </option>
+            <option value="jewish-studies">
+            Jewish Studies     </option>
+            <option value="k-12">
+            K-12 Resources     </option>
+            <option value="law">
+            Law     </option>
+            <option value="lis">
+            Library &amp; Information Science     </option>
+            <option value="literature">
+            Literature     </option>
+            <option value="mathematics">
+            Mathematics     </option>
+            <option value="news">
+            News &amp; Current Events     </option>
+            <option value="open-access-journals">
+            Open-Access Journals    </option>           
+            <option value="pharmacy">
+            Pharmacy     </option>
+            <option value="philosophy">
+            Philosophy     </option>
+            <option value="political-science">
+            Political Science     </option>
+            <option value="psychology">
+            Psychology     </option>
+            <option value="science">
+            Science    </option>
+            <option value="social work">
+            Social Work     </option>
+            <option value="sociology">
+            Sociology     </option>
+            <option value="speech">
+            Speech &amp; Communication    </option>
+            <option value="test-preparation">
+            Test Preparation    </option>
+            <option value="trials">
+            Trials    </option>
+          </select>
+          <input type="submit" class="input-submit" value="Go">
+        </form>
+        <div class="homepage-find-options-link">
+          <a href="https://erms.tourolib.org/?subject=trials">Database
+          trials</a>
+        </div>
+      </div>
+      <div id="homepage-find-ejournals" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+        <div class="homepage-find-description">
+          Search for <strong>eJournals</strong>
+        </div>
+        <form id="homepage-find-form-ejournals" class="homepage-find-form" action="http://tx4lz2dn3a.search.serialssolutions.com">
+          <select name="S">
+            <option value="AC_T_B" selected="selected">Title begins with</option>
+            <option value="T_W_A">Title contains</option>
+            <option value="AC_T_M">Title equals</option>
+            <option value="I_M">ISSN</option>
+          </select>
+          <input type="text" class="input-text homepage-find-text-primary" name="C">
+          <input value="1.0" name="V" type="hidden">
+          <input value="100" name="N" type="hidden">
+          <input id="input-sersol-code" type="hidden" name="L" value="tx4lz2dn3a">
+          <input class="input-submit" value="Search" type="Submit">
+        </form>
+
+        <div id="homepage-find-ejournals-options" style="display:none">
+          <form class="homepage-find-form pmid" action="http://RH4HH8NR6K.search.serialssolutions.com">
+            or search by PMID (PubMed ID):
+            <input type="text" class="input-text pmid" name="pmid">
+            <input type="hidden" name="SS_LibHash" value="RH4HH8NR6K">
+            <input type="hidden" value="article" name="genre">
+            <input type="hidden" value="sersol:uniqueIDQuery" name="sid">
+            <input type="submit" class="input-submit" value="Search">
+          </form>
+
+          <div class="homepage-find-ejournals-option-text">
+            For a specific article, use the
+            <a href="http://RH4HH8NR6K.search.serialssolutions.com/?SS_Page=refiner&amp;SS_RefinerEditable=yes">
+              Citation Linker
+            </a>
+          </div>
+        </div>
+
+        <div class="homepage-find-options-link">
+          <a id="homepage-find-ejournals-options-link" href="#">More options</a>
+          <span id="homepage-find-ejournals-options-outside" style="display: inline;">
+          |
+          <a href="http://www.tourolib.org/find/ejournals?list">eJournals for programs outside of New York</a>
+          </span>
+        </div>
+      </div>
+      <div id="homepage-find-videos" class="ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide">
+        <div class="homepage-find-description">
+          Browse our <strong>video databases</strong>
+        </div>
+        <div id="block-block-7" class="block block-block">
+
+  <div class="content">
+    <ul>
+<li>
+		<a href="https://erms.tourolib.org/database/493">AccessMedicine</a></li>
+<li>
+		<a href="https://erms.tourolib.org/database/291">Britannica Online</a></li>
+<li>
+		<a href="/resources/business-source-complete-videos">Business Source Complete</a></li>
+<li>
+		<a href="https://erms.tourolib.org/database/450">Counseling and Therapy in Video, Volumes I-II</a></li>
+<li>
+		<a href="https://erms.tourolib.org/database/506">Education in Video</a></li>
+<li>
+		<a href="https://erms.tourolib.org/database/552">Films on Demand</a></li>
+<li>
+		<a href="https://erms.tourolib.org/database/348">HIPAA: A Guide for Healthcare Workers</a></li>
+<li>
+		<a href="https://erms.tourolib.org/database/349">Infection Control for Healthcare Professionals</a></li>
+<li>
+		<a href="https://erms.tourolib.org/database/555">Video Journal of Counseling and Therapy</a></li>
+</ul>
+<p>Use the&nbsp;<strong>Books &amp; more</strong>&nbsp;tab to find DVDs available in your library.</p>
+  </div>
+</div>
+      </div>
+    </div>
+    </div>

@@ -1,0 +1,832 @@
+/*
+
+SECTIONS
+
+$top_navigation
+$school_nav_area
+$gateway_nav
+$school_nav
+$scroll_bar
+$schools_basic
+$schools_events
+$doors
+
+*/
+/* */
+html,
+body {
+  min-height: 100%;
+}
+.right[class*="span"],
+.right {
+  float: right;
+}
+.bigger {
+  font-size: 18px;
+}
+.inner {
+  background: none repeat scroll 0 0 #FFFFFF;
+  padding: 0 20px 20px;
+  position: relative;
+  z-index: 3;
+}
+/* $top_navigation */
+.navbar-inner {
+  border: none;
+}
+.navbar .brand {
+  padding: 0.5em 1em 0.5em 0;
+}
+.schools .brand {
+  margin-top: 4px;
+}
+.schools .brand > img {
+  margin: -14px 0 0;
+}
+.schools .brand > span {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+}
+.schools #search_bar {
+  border: medium none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+}
+.schools #search {
+  margin: 6px 0;
+  padding: 0;
+}
+.schools #search .search_field {
+  border-radius: 12px 12px 12px 12px;
+  border: 1px solid navy;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7) inset;
+  margin: 0;
+  padding: 8px 12px;
+}
+/* $school_nav_area */
+.small-logo {
+  float: right;
+  margin: 40px 0 15px;
+}
+.school_header h1 {
+  color: #162944;
+  display: block;
+  float: left;
+  font-family: 'helvetica', sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 100;
+  height: 75px;
+  margin: 40px 0 0;
+  text-transform: uppercase;
+}
+.school_header h1 span {
+  color: #463E35;
+  display: inline-block;
+  font-family: 'georgia', serif;
+  font-size: 22px;
+  font-weight: 100;
+  text-transform: none;
+}
+/*
+ * Common class for all horizontal navs
+ */
+.horizontal_nav {
+  clear: both;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.horizontal_nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+.horizontal_nav li.last {
+  float: right;
+}
+.horizontal_nav li a {
+  padding: 0px 6px 0px 6px;
+}
+.horizontal_nav li:first-child a {
+  padding: 0px 6px 0px 0;
+}
+.horizontal_nav li.last a {
+  border: none;
+  padding: 0px 0 0px 6px;
+}
+/* $gateway_nav */
+.gateway_nav {
+  float: right;
+  margin-bottom: 6px;
+}
+.gateway_nav a {
+  border-right: 1px solid #696666;
+  font-size: 13px;
+  font-weight: 600;
+}
+/* 
+ * school main navigation 
+ */
+.school_nav {
+  background-color: #1967a2;
+  background-image: linear-gradient(left bottom, #124b77 5%, #155687 10%, #1967a2 40%);
+  background-image: -o-linear-gradient(left bottom, #124b77 5%, #155687 10%, #1967a2 40%);
+  background-image: -moz-linear-gradient(left bottom, #124b77 5%, #155687 10%, #1967a2 40%);
+  background-image: -webkit-linear-gradient(left bottom, #124b77 5%, #155687 10%, #1967a2 40%);
+  background-image: -ms-linear-gradient(left bottom, #124b77 5%, #155687 10%, #1967a2 40%);
+}
+.school_nav .last a {
+  margin: 0;
+}
+.school_nav ul {
+  float: none;
+  margin: 0 auto;
+}
+.school_nav li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 36px;
+  margin: 0 34px 0 0;
+  text-transform: uppercase;
+}
+/* $scroll_bar */
+.schools .scroll_bar {
+  box-shadow: -2px 1px 9px -1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 3;
+}
+.schools .show3,
+.schools .show2 {
+  width: 172px;
+}
+.schools #makeMeScrollable,
+.doors,
+.inside_landing #makeMeScrollable {
+  height: 311px;
+}
+.static a.arrow {
+  color: #fff;
+  font-size: 16px;
+  position: static;
+  text-transform: none;
+}
+.static .scroll-overlay-text {
+  bottom: 0;
+  display: block;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+.inner-label {
+  color: #D0EAFB;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 13px;
+  margin: 0 0 10px;
+}
+.inner-overlay {
+  background: none repeat scroll 0 0 #222;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
+  float: right;
+  margin: 24px;
+  padding: 10px 20px;
+  position: relative;
+  width: 300px;
+}
+.inner-overlay h2 {
+  color: #FFFFFF;
+  font-family: 'georgia pro', 'georgia', serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.inner-overlay > p {
+  color: #fff;
+  font-size: 13px;
+}
+.doors img {
+  display: block;
+  position: relative;
+  margin: 10px 0 0 0;
+  padding: 0;
+  /* If you don't want the images in the scroller to be selectable, try the following
+	   block of code. It's just a nice feature that prevent the images from
+	   accidentally becoming selected/inverted when the user interacts with the scroller. */
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.schools .scroll-overlay-text {
+  font-size: 1.5em;
+}
+.schools .scroll-overlay {
+  height: 290px;
+}
+.schools .show3 .scroll-overlay {
+  height: 140px;
+}
+.endcap .scroll-overlay-text a {
+  position: relative;
+  z-index: 99999;
+}
+div.scrollingHotSpotLeft,
+div.scrollingHotSpotRight {
+  height: 70% !important;
+  top: 15%;
+}
+.doors img {
+  display: block;
+  position: relative;
+  margin: 10px 0 0 0;
+  padding: 0;
+  /* If you don't want the images in the scroller to be selectable, try the following
+	   block of code. It's just a nice feature that prevent the images from
+	   accidentally becoming selected/inverted when the user interacts with the scroller. */
+
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+.doors div.showInfo:hover > img {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+
+  filter: gray;
+  /* IE6-9 */
+
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+
+}
+.doors {
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* $schools_basic */
+.schools #main_content {
+  margin-bottom: 40px;
+}
+.intro {
+  color: #242833;
+  font-family: 'georgia pro', 'georgia', serif;
+  margin: 0 0 35px;
+}
+.sidebar_feature:after {
+  right: 8px;
+  z-index: 0;
+}
+.sidebar_feature:before {
+  left: 8px;
+  z-index: 0;
+}
+.sidebar_feature.no_shadow:after {
+  z-index: -1;
+}
+.img_overlay {
+  background: url("/images/sidebar_triangle.png") no-repeat scroll center center transparent;
+}
+.sidebar_feature h3 span {
+  font-size: inherit;
+}
+.sidebar_feature.post-it .inner {
+  background-color: #FDF7D9;
+  padding: 20px;
+  position: relative;
+  z-index: 3;
+}
+.sidebar_feature.post-it .inner h3 {
+  margin-top: 0;
+}
+.feature_image > img {
+  z-index: 4;
+}
+.feature_image .img_overlay {
+  background: url("/images/sidebar_right_triangle.png") no-repeat scroll center center transparent;
+}
+.schools_news {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 25px;
+}
+.schools_news ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.schools_news li {
+  display: block;
+  margin: 0 0 25px;
+}
+.schools_news h3 {
+  color: #1967A2;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  margin: 0 0 4px;
+  padding: 0;
+}
+.schools_news p {
+  font-size: 13px;
+}
+.schools_news p a {
+  font-weight: 600;
+}
+.news_item.mini_profile {
+  border-left: none;
+}
+.mini_profile img {
+  display: block;
+  max-width: 95%;
+  margin: 0px 0 6px 0;
+}
+.news_item h3,
+.inside_page .news_item h3 {
+  margin: 0 0 0.75em;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+.news_item .inner {
+  background: transparent;
+}
+.news_item a {
+  color: #06335a;
+}
+.news_item.green a {
+  color: #0E5E2B;
+}
+.news_item.green h3 {
+  background-color: #0E5E2B;
+}
+.mini_profile a {
+  color: #991A22;
+}
+.mini_profile.blue a {
+  color: #06335a;
+}
+.news_item a.bigger {
+  font-size: 18px;
+  font-weight: 600;
+}
+.inside_navigation .news_item .inner li {
+  border: medium none;
+}
+.news_feature {
+  background-color: #FFFFFF;
+  float: left;
+  height: 340px;
+  margin: 0 20px 0 0;
+  max-height: 340px;
+  padding: 6px;
+  position: relative;
+  width: 285px;
+}
+.news_feature.last {
+  margin: 0;
+}
+.news_feature > p > a {
+  color: #000066;
+  font-weight: 600;
+}
+.news_feature a.arrow,
+a.arrow {
+  background: url(../images/schools/perma-link-blue.png) no-repeat right center;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 18px;
+  height: 45px;
+  left: -10px;
+  line-height: 45px;
+  padding: 5px 30px 5px 20px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 200px;
+}
+.news_feature.first a.arrow {
+  background: url(../images/schools/perma-link-fuschia.png) no-repeat right center;
+}
+.news_feature a.line2 {
+  line-height: 22px;
+}
+.news_feature p {
+  font-size: 13px;
+  padding: 38px 10px 0;
+}
+.has_image > a {
+  background: url("/images/mosaic/IE7-overlay.png") repeat center center transparent;
+}
+/* $schools_events	*/.event_dtl {
+  margin: 0 0 20px;
+}
+.event_icon {
+  background: url(/images/inside_pages/event-cal-icon.png) no-repeat center center;
+  float: left;
+  height: 59px;
+  margin: 0 20px 0 0;
+  text-align: center;
+  width: 52px;
+}
+.event_icon .icon_month {
+  color: #FFFFFF;
+  display: block;
+  font-size: 11px;
+  height: 23px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+.event_icon .icon_day {
+  color: #000;
+  display: block;
+  font-size: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.event_dtl > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.event_dtl ul li {
+  margin: 0;
+}
+.event_dtl ul li span {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.event_dtl ul li span span {
+  color: #4f5a55;
+  font-size: 14px;
+  font-weight: 200;
+  margin-right: 4px;
+}
+.event_dtl h3 {
+  color: #242833;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin: 0;
+}
+.event_dtl p {
+  font-size: 13px;
+  margin-left: 71px;
+}
+.schools_events > a {
+  font-size: 14px;
+  font-weight: 600;
+}
+/* $events_box */
+.events_box {
+  height: 600px;
+  position: relative;
+  width: 100%;
+}
+.events_box .schools_events {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.schools_events h4 {
+  color: #CE2254;
+}
+.event_tab {
+  background-color: #98A4B1;
+  color: #FFFFFF;
+  display: block;
+  margin: 0 10px 0 0;
+  padding: 10px 18px 6px;
+  position: relative;
+  text-align: center;
+  width: 60px;
+  z-index: 3;
+}
+.men_events .event_tab {
+  margin-left: 102px;
+}
+.event_tab:hover {
+  color: #06335A;
+}
+.women_events .event_tab {
+  margin-left: 204px;
+}
+.active_tab .event_tab {
+  background-color: #fff;
+  color: #06345b;
+}
+.box_inner {
+  background-color: #FFFFFF;
+  display: none;
+  padding: 24px 18px 16px;
+}
+.active_tab .box_inner {
+  display: block;
+}
+.white_box {
+  background-color: #FFFFFF;
+  padding: 15px 0;
+}
+.white_box p a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.recent_news > h3 {
+  color: #CE2254;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+}
+.school_links {
+  float: left;
+  margin: 0 0 0 8%;
+  width: 46%;
+}
+.school_links.first {
+  margin: 0;
+}
+.school_links h3 {
+  background-color: #2E62A7;
+  font-family: "helvetica neue", helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  padding: 14px 0;
+  text-align: center;
+}
+.school_links h3 a {
+  color: #fff;
+}
+.school_links ul {
+  color: #2e62a7;
+  font-size: 13px;
+  font-weight: 600;
+}
+.school_links a {
+  color: #242833;
+}
+.womens_school h3 {
+  background-color: #654382;
+}
+.womens_school ul {
+  color: #654382;
+}
+.school-links {
+  margin-top: 25px;
+}
+.recent_news {
+  padding: 0 20px 0 0;
+}
+.recent_news p.news_headline {
+  color: #06335A;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.recent_news > ul {
+  color: #242833;
+  font-size: 13px;
+}
+.recent_news li {
+  margin-bottom: 14px;
+}
+.recent_news a {
+  font-weight: 600;
+}
+.left_box {
+  border-right: 1px solid #CCCCCC;
+  padding: 0 20px 0 0;
+}
+#quick_search input {
+  border: 1px solid #CDD6DE;
+}
+/* $footer */.schools footer .bg-color {
+  background-color: #162944;
+}
+.schools footer .container .row {
+  background: transparent;
+  padding: 10px 0;
+}
+.footer-header {
+  border-bottom: 1px solid #CCCCCC;
+  margin-bottom: 10px;
+}
+.schools footer h4 {
+  color: #FFFFFF;
+  float: left;
+  font-size: 17px;
+  font-weight: 200;
+  margin: 0 0 10px;
+  width: 500px;
+}
+.schools footer p {
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0;
+  text-transform: none;
+}
+.schools footer p b {
+  font-weight: 600;
+}
+footer .share {
+  float: right;
+  padding: 0;
+}
+footer .sharelinks {
+  margin: 0;
+  padding: 0;
+}
+footer .share .sharelinks li,
+.inside_page footer .share .sharelinks li {
+  float: left;
+  line-height: 16px;
+  margin: 0 0 0 10px;
+}
+.schools footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.schools footer li {
+  margin: 0 0 10px;
+  text-align: right;
+  text-transform: none;
+}
+.schools footer li a {
+  color: #8BBEE4;
+  font-size: 16px;
+  font-weight: 500;
+}
+/* $doors */
+.schools2 .school_header h1 {
+  text-transform: none;
+}
+.schools2 .school_nav {
+  background-color: #658199;
+  background-image: none;
+}
+.schools2 .school_nav a {
+  border-right: 1px solid #2C4767;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 15px;
+  line-height: 13px;
+  margin: 3px 7.5px 2px 0;
+  padding: 0 15px 0 8px;
+  text-transform: none;
+}
+.schools2 .school_nav .horizontal_nav li:first-child a {
+  padding: 0 14px 0 1px;
+}
+.schools2 .school_nav .horizontal_nav li.last a {
+  border: medium none;
+  margin: 3px 0 2px;
+  padding: 0;
+}
+.doors_scroll .doors {
+  float: left;
+  width: 50%;
+}
+#MenScroll {
+  margin-right: 190px;
+}
+#startMen {
+  margin-right: 0;
+}
+.endcap {
+  background-color: #FFFFFF;
+  height: 311px;
+  margin: 0;
+  padding: 0 10px 0 0;
+  position: absolute;
+  top: 0;
+  width: 170px;
+}
+#endcap_women {
+  left: 0;
+  z-index: 19;
+}
+#WomenScroll .scrollableArea .col:first-child {
+  margin-left: 180px;
+}
+#endcap_men {
+  padding: 0 10px;
+  right: 0;
+}
+.endcap .scroll-overlay,
+.endcap .scroll-overlay-text {
+  bottom: 10px;
+  display: block;
+}
+.endcap .scroll-overlay {
+  background-color: #3c78cd;
+  /* IE 8 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+
+  filter: alpha(opacity=50);
+  background-color: rgba(60, 120, 205, 0.7);
+}
+#endcap_women .scroll-overlay {
+  background-color: #9b64ff;
+  /* IE 8 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+
+  filter: alpha(opacity=50);
+  background-color: rgba(155, 110, 205, 0.7);
+}
+#WomenScroll .scroll-overlay {
+  background-color: #9b64ff;
+  /* IE 8 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+
+  filter: alpha(opacity=50);
+  background-color: rgba(155, 110, 205, 0.4);
+}
+.endcap .scroll-overlay-text > h3 {
+  color: #FFFFFF;
+  font-family: 'helvetica neue', 'helvetica', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 200;
+}
+.endcap .scroll-overlay-text h3 b {
+  font-weight: 500;
+}
+.endcap .scroll-overlay-text > a {
+  background-color: #FFFFFF;
+  color: #27538E;
+  font-size: 13.75px;
+  font-weight: 600;
+  padding: 1px 6px;
+  text-shadow: none;
+}
+#endcap_women .scroll-overlay-text a {
+  color: #654382;
+}
+.doors_scroll .col:after {
+  background-color: #26538E;
+  bottom: 30px;
+  content: " ";
+  display: block;
+  height: 20px;
+  left: 0;
+  position: relative;
+  top: auto;
+  width: 100%;
+}
+.doors_scroll .endcap:after {
+  display: none;
+}
+.doors_scroll #WomenScroll .col:after {
+  background-color: #654382;
+}
+.x-large-profile {
+  margin: 0 0 30px;
+  position: relative;
+}
+.x-large-profile .profile-blurb {
+  background: none repeat scroll 0 0 #1e3c69;
+  background: none repeat scroll 0 0 rgba(30, 60, 105, 0.8);
+  bottom: 0;
+  color: #FFFFFF;
+  font-size: 15px;
+  padding: 10px 20px 0;
+  position: absolute;
+}
+.x-large-profile .profile-blurb > h3 {
+  color: #FFFFFF;
+  font-family: "adobe caslon pro", "georgia", serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 100;
+  margin: 0 0 10px;
+}
+.x-large-profile .profile-blurb > h3 b {
+  color: #ffe270;
+}
+.news_links {
+  padding: 0 20px;
+}
