@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="touro">
   <head>
     <meta charset="utf-8">
     <title>The Touro College and University System</title>
@@ -8,18 +8,72 @@
     <meta name="author" content="">
 
     <?php include('includes/head.php'); ?>
+    
+    	<!--[if lte IE 8]>
+      <script>
+      // The ieshiv takes care of our ui.directives, bootstrap module directives and
+      // AngularJS's ng-view, ng-include, ng-pluralize and ng-switch directives.
+      // However, IF you have custom directives (yours or someone else's) then
+      // enumerate the list of tags in window.myCustomTags
+       
+      //window.myCustomTags = [ 'yourDirective', 'somebodyElsesDirective' ]; // optional
+      </script>
+      <script src="javascripts/angular-ui-custom/angular-ui-ieshiv.min.js"></script>
+      <![endif]-->
 
   </head>
 
   <body class="homepage">
 
+
+
+
+
+
+
+
 	  <?php include('includes/top-navigation.php'); ?>
-	  
 	  <div class="container">
 	  	<div id="search_bar">
-			<a href="/buildout"><img src="images/WeAreTouro-homepage.png" alt="We Are Touro" /></a><form id="search"><input type="text" class="search_field" placeholder="Search schools, pages &amp; people"/></form>
+			<a href="/buildout"><img src="images/WeAreTouro-homepage.png" alt="We Are Touro" /></a>
+			
+			
+		 <div class="search-wrapper" data-ng-controller="SearchCtrl" data-ng-cloak>
+        <div class="pull-right" data-touro-search data-replace-div="#makeMeScrollable,#main_content,#main_navigation" data-search-size="10" data-input-class="main-search-field" data-search-element-uniqueid="mainsearch" data-place-holder-text="Type to Search"></div>
+        <div class="clearfix"> </div>
+
+        <div class="search-result-wrapper" data-ng-show="searchedData">
+         
+          <div class="search-pagination"><pagination boundary-links="true" num-pages="noOfPages" current-page="currentPage"  max-size="maxSize"></pagination></div>
+          <div class="clearfix"> </div>
+          <div class="searched-details">Total Search Results for "{{searchedParams.q}}" : {{searchedData.data.hits.total}}</div>
+            <div data-ng-repeat="(k,v) in searchedData.data.hits.hits">
+              <div style="padding:10px;border-bottom:solid 1px #ccc;">
+              
+              <div style="font-weight:bold"><a href="{{v.url | swapurl:v.source_url }}" target="_blank" ng-bind-html-unsafe="v.title | removenewlines"></a></div>
+              <div style="font-size:10px;"><strong>{{v.content_type}}</strong></div>
+              <div style="font-size:11px;" ng-bind-html-unsafe="v.intro_text_plain_text"></div>
+              
+            </div>
+          
+
+          
+          </div>
+          <div class="clearfix"> </div>
+          <div class="search-pagination"><pagination boundary-links="true" num-pages="noOfPages" current-page="currentPage"  max-size="maxSize"></pagination></div>
+          
+            
+        </div>
+      </div>
+
+
+			
+			
 		</div>
 	  </div>	
+	  
+	  
+
 	  
 	  
 	<!-- scroll area -->
@@ -464,5 +518,16 @@
 	    <?php include('includes/footer.php'); ?>
 
 	</footer>
+	
+	
+
+	<link href="/javascripts/angular-ui-custom/angular-ui.min.css" rel="stylesheet">
+	<script src="/javascripts/angular/angular.min.js" type="text/javascript"></script>
+	<script src="/javascripts/angular/angular-resource.min.js" type="text/javascript"></script>
+	<script src="/javascripts/angular-ui-custom/angular-ui.min.js" type="text/javascript"></script>
+	<script src="/javascripts/bootstrap-gh-pages/ui-bootstrap-tpls-0.2.0.min.js" type="text/javascript"></script>
+	<script src="/javascripts/touro-ng.js" type="text/javascript"></script>
+	
+
   </body>
 </html>

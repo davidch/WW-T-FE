@@ -1323,5 +1323,41 @@ div.showInfo:hover > .scroll-overlay, div.showInfo:hover > .scroll-overlay-text 
 		    text-align: center;
 		    width: 100%;
 		}
-	
-	
+		
+		
+		
+		
+		
+.search-pagination
+{
+  text-align: center;
+}
+.search-result-wrapper
+{
+  padding:10px;
+  padding-top:10px;
+  margin-top:10px;
+  border-top:solid 2px #ccc;
+}
+.search-result-wrapper .searched-details
+{
+  font-style: italic;
+  font-weight: bold;
+  padding:5px;
+  border-bottom:solid 1px #ccc;
+}
+input.main-search-field-error, input.main-search-field-error:focus
+{
+  border:solid 2px #f00;
+}
+input.main-search-field
+{
+border-radius: 8px 8px 8px 8px;
+box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.7) inset;
+padding: 8px 12px;
+margin-top:30px;
+}
+input.inside-main-search
+{
+  margin-top:0px;
+}	
